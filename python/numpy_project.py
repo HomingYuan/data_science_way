@@ -36,8 +36,6 @@ def fun(path):
 # pygame.mixer.music.stop()
 
 #  两者结合起来
-i = 0
-
 
 
 def traverse_file(path):
@@ -62,8 +60,9 @@ def main():
     path = r'D:\CloudMusic\mp3'
     playlist1 = traverse_file(path)
     for i in np.arange(len(playlist1)):
-        print("播放音乐:%s" % playlist1[np.random.randint(0, len(playlist1))])
-        play_music_random(playlist1[np.random.randint(0, len(playlist1))])
+        t = playlist1[np.random.randint(0, len(playlist1))]
+        print("播放音乐:%s" % t)
+        play_music_random(t)
 
 if __name__ == '__main__':
     main()
