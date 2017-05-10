@@ -24,14 +24,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="numpy_project.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matplotlib_study.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/matplotlib_study.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="numpy_project.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/numpy_project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="990">
               <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="e#153#171#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mat_study.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../python/code/mat_study.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="108" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mat_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../python/code/mat_plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="79" column="10" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,8 +81,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -62,6 +92,7 @@
         <option value="$PROJECT_DIR$/numpy_study.py" />
         <option value="$PROJECT_DIR$/numpy_study.ipynb" />
         <option value="$PROJECT_DIR$/numpy_project.py" />
+        <option value="$PROJECT_DIR$/matplotlib_study.py" />
       </list>
     </option>
   </component>
@@ -307,16 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_study.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="210" column="99" lean-forward="false" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="112" />
-          <folding>
-            <element signature="e#152#170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../python/python_training/day1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -333,6 +354,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/numpy_project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#153#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../python/python_training/Day1_homework.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1147">
@@ -341,13 +372,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_project.py">
+    <entry file="file://$PROJECT_DIR$/numpy_study.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="305">
+          <caret line="210" column="99" lean-forward="false" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="112" />
           <folding>
-            <element signature="e#153#171#0" expanded="true" />
+            <element signature="e#152#170#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python/code/mat_study.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="108" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python/code/mat_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="79" column="10" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matplotlib_study.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
