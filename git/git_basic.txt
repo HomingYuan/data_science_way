@@ -1,0 +1,19 @@
+1. 建立个人用户名
+	git config --global user.name "John Doe"
+2. 建立个人邮箱
+	git config --global user.email johndoe@example.com
+
+3. 建立初始化一个创库
+	git init
+4. 添加内容
+	git add filename
+5.提交修改
+	git commit -m 'blabla'
+6.建立远程 如github
+	 git remote add origin https://github.com/username/LearningPythonDiary.git 
+7.推送到远程
+	git push origin master
+8.把远程信息更新到本地
+	git pull origin master
+9.复制到本地
+	git clone https://github.com/username/LearningPythonDiary.git master
