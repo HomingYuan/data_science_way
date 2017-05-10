@@ -22,7 +22,7 @@ def fun(path):
             t.append(root+fn)
     return t
 
-print(fun(r'D:\Big_data\大数据学习\data_science_way'))
+# print(fun(r'D:\Big_data\大数据学习\data_science_way'))
 
 # 播放MP3
 
@@ -36,15 +36,40 @@ print(fun(r'D:\Big_data\大数据学习\data_science_way'))
 # pygame.mixer.music.stop()
 
 #  两者结合起来
-for root, dirs, files in os.walk(r'D:\CloudMusic\mp3'):
-    for fn in files:
-        file = root + "\\" + (fn) # 注意是两个斜杠
-        pygame.mixer.init()
-        print("播放音乐1")
-        track = pygame.mixer.music.load(file)
-        pygame.mixer.music.play()
-        time.sleep(300)
-        pygame.mixer.music.stop()
+i = 0
+
+
+
+def traverse_file(path):
+    l = []
+    for root, dirs, files in os.walk(path):
+        for fn in files:
+            file = root + "\\" + (fn) # 注意是两个斜杠
+            l.append(file)
+            print (l)
+    return l
+
+
+def play_music_random(path):
+    pygame.mixer.init()
+    track = pygame.mixer.music.load(path)
+    pygame.mixer.music.play()
+    time.sleep(60)
+    pygame.mixer.music.stop()
+
+
+def main():
+    path = r'D:\CloudMusic\mp3'
+    playlist1 = traverse_file(path)
+    for i in np.arange(len(playlist1)):
+        print("播放音乐:%s" % playlist1[i])
+        play_music_random(playlist1[np.random.randint(0, len(playlist1))])
+
+if __name__ == '__main__':
+    main()
+
+
+
 
 
 
