@@ -20,12 +20,14 @@ def traverse_file(path):
             l.append(file)
     return l
 
+
 def play_music_random(path):
     pygame.mixer.init()
     track = pygame.mixer.music.load(path)
     pygame.mixer.music.play(loops=0, start=0.0)
-    time.sleep(200)
-    pygame.mixer.music.stop()
+    time.sleep(120)
+
+
 
 
 def main():
