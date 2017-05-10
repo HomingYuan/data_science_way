@@ -54,7 +54,7 @@ def play_music_random(path):
     pygame.mixer.init()
     track = pygame.mixer.music.load(path)
     pygame.mixer.music.play()
-    time.sleep(60)
+    time.sleep(120)
     pygame.mixer.music.stop()
 
 
@@ -62,7 +62,7 @@ def main():
     path = r'D:\CloudMusic\mp3'
     playlist1 = traverse_file(path)
     for i in np.arange(len(playlist1)):
-        print("播放音乐:%s" % playlist1[i])
+        print("播放音乐:%s" % playlist1[np.random.randint(0, len(playlist1))])
         play_music_random(playlist1[np.random.randint(0, len(playlist1))])
 
 if __name__ == '__main__':
