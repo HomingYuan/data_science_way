@@ -6,17 +6,17 @@
 @file: numpy_project.py
 @time: 2017/5/9 20:08
 """
-import numpy as np
+
 import os
 import pygame
 import time
+import numpy as np
 
 
 def traverse_file(path):
     l = []
     for root, dirs, files in os.walk(path):
         files=filter(lambda file:file[-4:]=='.mp3',files)
-#        files=map(lambda file:os.path.join(root,file),files)
         for fn in files:
             file = root + "\\" + fn  # 注意是两个斜杠
             l.append(file)
