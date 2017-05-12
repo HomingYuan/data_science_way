@@ -1,0 +1,344 @@
+mysql 保存日志方法
+参考log.txt文件
+1.登陆mysql后，输入 tee D:\log.txt（后面地址可以修改成你要保存的地方）
+
+2.创建数据库
+create database if nor exists pythonstudydb;
+
+3.查询相关信息
+\s
+
+4.删除数据库
+
+
+drop database db_name;
+
+4.1 修改数据库
+
+
+ALTER DATABASE [db_name] db_attr...
+
+5.查询引擎信息
+
+show engines
+其中InnoDB是默认引擎，且是唯一支持transact的引擎
+
+6,创建表
+a.先选数据库use database db_name;
+b.然后 create table tb_name(id int,name char(20))ENGINE=InnoDB;
+
+7.查询表信息
+show create table tb_name;
+describe tb_name;
+
+8.创建临时表，它在与服务器断开连接时，自动消失
+create temproary table tb_name(i int);
+
+9 其他创建表方法
+
+create table tb1 like tb2;
+insert into tb1 select * from tb2
+快速赋值table tb2
+
+cretate table tb1 select * from tb2;
+
+10 创建别名
+
+create table t3 select t1.c as c1, t2.c as c2
+
+11.删除表
+
+drop table if exists tb_name 
+
+12.创建索引
+
+12.1在创建表格是定义索引
+
+create table tb1(i int,
+		 t ,varchar(30),
+		  index(i));
+mysql> CREATE TABLE mytb4(
+    -> i INT NOT NULL,
+    -> j CHAR(10),
+    -> PRIMARY KEY(i),
+    -> UNIQUE(j)
+    -> );
+
+12.2后期添加
+
+alter table tb1 add index index_name(index_columns);
+alter table tb1 add unique index_name(index_columns);
+alter table tb1 add primary key(index_columns);
+alter table tb1 add fulltext index_name(index_columns);
+alter table tb1 add spatial index_name(index_columns);
+
+13 删除索引
+
+mysql> create table tb1(
+    -> i int not null primary key,
+    -> j char(20),
+    -> index(j));
+
+alter table tb1 drop primary key;
+alter table tb1 drop index j;
+
+14.修改表
+
+alter table tb1 modify i mediumint unsigned;修改属性
+alter table tb1 change i i int unsigned;和上面基本相似
+
+alter table tb1 engine=MyISAM 更改数据引擎
+
+alter table tb1 rename to tb2;更改表名字
+rename table tb2 to tb1; 更改表名字
+
+15 给表格添加数据
+
+insert into tb_name values(v1,v2);
+
+16 清空表格中的数据
+
+truncate tb_name;
+
+17数据查询select
+
+SELECT select_list         # what columns to select
+FROM table_list            # The table from which to select rows
+WHERE row_constraint       # what conditions row must safisfy
+GROUP BY grouping_columns  # how to group results
+ORDER BY sorting_columns   # Hpw to sort results
+HAVING group_constraint    # What condition groups must satisfy
+LIMIT count;               # ROw count limit on results
+
+17 连接查询
+
+create table t1(i1 int, c1,varchar(10));
+create table t2(i2 int,c2 varchar(10));
+
+insert into t1 values(1,'a');
+insert into t1 values(2,'b');
+insert into t1 values(3,'c');
+
+insert into t2 values(2,'b');
+insert into t2 values(3,'c');
+insert into t2 values(4,'a');
+
+SELECT t1.*,t2.* FROM t1 INNER JOIN t2 # 内联
+
+SELECT t1.*,t2.* FROM t1  INNER JOIN t2 WHERE t1.i1=t2.i2;
+
+SELECT t1.*,t2.* FROM t1 LEFT JOIN t2 ON t1.i1= t2.i2;
+
+18 导入sql文件
+
+source file_name(需在文件切换到所在目录下面)
+
+19 子查询
+
+19.1子查询与关系比较操作符
+SELECT * FROM SCORE 
+WHERE event_id =(SELECT evebt_id FROM grade_evebt WHERE date = '2008-09-23' AND catefory = 'Q');
+
+SELECT * FROM score WHERE event_id = 5 AND score>(SELECT AVG(score) FROM score WHERE event_id = 5);
+
+19.2 IN 和 NOT IN 子查询
+SELECT * FROM student WHERE student_id IN(SELECT student_id from absence);
+
+19.3 ANY,ALL,SOME自查询
+
+SELECT last_name, first_name,birth FROM president WHERE birth<=ALL(SELECT birth FROM president);
+
+19.4 EXISTS 和NOT EXISTS 子查询
+
+SELECT EXISTS (SELECT * FROM absence);
+
+SELECT NOT EXISTS (SELECT * FROM absence);
+
+19.4 from 子查询
+
+a. 改写用来选取匹配值的子查询
+SELECT * FROM (SELECT 1,2) AS t1 INNER JOIN (SELECT 3,4) AS t2;
+
+19.5把子查询改写为连接查询
+
+SELECT * FROM tbale1 WHERE column1 IN (SELECT column2a FROM table2 WHERE column2b = value);
+
+和下面的查询等价
+
+SELECT table1.*  FROM table1 INNER JOIN table2 ON table1.column1 = table2.column2a WHERE  table2.column2b =value;
+
+实例1
+
+SELECT * FROM score WHERE event_id IN (SELECT event_id FROM grade_event WHERE category = 'T');等价下面查询
+
+SELECT score.* FROM score INNER JOIN grade_event ON score.event_id = grade_event.event_id WHERE grade_event.category = 'T';
+
+实例2
+
+SELECT * from score WHERE student_id IN (SELECT student_id FROM student WHERE sex = 'F');等价下面的查询
+
+SELECT score.* FROM score INNER JOIN student ON score.student_id = student.student_id WHERE sex = 'F';
+
+b.改写用来选取非匹配（缺失）值的子查询
+
+20外键
+
+例1
+
+CREATE TABLE child(
+par_id INT NOT NULL,
+child_id INT NOT NULL,
+PRIMARY KEY (par_id,child_id),
+FOREIGN KEY(par_id) REFERENCES parent(par_id)
+ON DELETE CASCADE # 如果写为ON DELETE SET NULL删除parent表后，child表值将变为0
+ON UPDATE CASCADE
+)ENGINE = INNODB;
+
+INSERT INTO parent(par_id) VALUES(1),(2),(3);
+INSERT INTO child(par_id,child_id) VALUES(1,1),(1,2);
+INSERT INTO child(par_id,child_id) VALUES(2,1),(2,2),(2,3);
+INSERT INTO child(par_id,child_id) VALUES(3,1);
+
+SELECT * FROM parent;
+SELECT * FROM child;
+
+INSERT INTO child(par_id,child_id) VALUES(4,1);#将会出错，parent值只能为1，2，3
+
+DELETE FROM parent WHERE par_id = 1;#child表中1的值将都会删除
+
+Chapter3
+CREATE TABLE mytb1(
+int_col INT,
+str_col CHAR(20),
+date_col DATE);
+
+INSERT INTO mytb1(int_col,str_col,date_col) VALUES(14,CONCAT('a','b'),20090115);
+
+SELECT * FROM mytb1;
+
+CREATE TABLE e_table(e ENUM('jane','fred','will','msrcia'));
+
+INSERT INTO e_table values ('jane');
+INSERT INTO e_table values ('fred');
+INSERT INTO e_table values ('will');
+INSERT INTO e_table values ('msrcia');
+INSERT INTO e_table values (NULL);
+
+CREATE TABLE t(e ENUM('a','','b'));
+
+INSERT INTO t VALUES ('a'),(''),('b');
+
+CREATE TABLE s_table (s SET('table','lamp','chair','stool'));
+
+INSERT INTO s_table VALUES ('table'),('lamp'),('chair'),('stool'),(''),(NULL);
+
+SELECT s,s+0,BIN(s+0) FROM s_table;
+
+
+SET time_zone = '+08:00'设置北京时间
+
+
+空间数据类型
+
+
+
+chapter 4
+
+CREATE PROCEDURE sampdb_tables()
+
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_SCHEMA = 'sampdb' ORDER BY TABLE_NAME;
+
+CREATE PROCEDURE greetings()
+BEGIN
+	# 77= 16 for username +60 for hostanme +1 for '@'
+	DECLARE user CHAR(77) CHARACTER SET utf8;
+	SET user =(SELECT CURRENT_USER());
+	IF INSTR(user,'@')>0
+	  THEN SET user  = SUBSTRING_INDEX(user,'@',1);
+	IF user = '' THEN SET user = 'earthling';
+	END IF;
+	SELECT CONCAT('Greetings,',user ,'!') AS greeting;
+	END$
+
+在使用复合语句时，必须用分号隔开彼此，但Mysql是以分号为中止符，所以需要加上下面声明
+delimiter $
+
+结束时
+
+delimiter ;
+
+
+
+
+
+
+CREATE FUNCTION count_born_in_year(p_year INT) RETURNS INT READS SQL DATA BEGIN RETURN(SELECT COUNT(*) FROM president WHERE YEAR(birth)=p_year); END*
+
+CREATE TRIGGER bi_t BEFORE INSERT ON t
+FOR EACH ROW BEGIN
+SET NEW.dt =CURRENT_TIMESTAMP
+IF NEW.percent <0 THEN NEW.SET percent = 0;
+ELSEIF NEW.percent >100 THEN SET NEW.percent = 100;
+END IF;
+END$
+
+第五章
+
+CREATE TABLE lookup(
+id INT NOT NULL,
+name CHAR(20),
+PRIMARY KEY USING BTREE(id)
+)ENGINE = MEMORY;
+
+查找数据所在位置
+show variables like 'datadir'
+
+查询结果
+
+ C:\ProgramData\MySQL\MySQL Server 5.7\Data\
+
+
+
+ALTER TABLE tb_name ADD column_name FIRST #将某一列至于第一列
+
+ALTER TABLE tb_name CHANGE column_old column_new data_type condi;#注意后面数据类型不能省略否则重命名失败
+
+
+UPDATE tab_name SET col1_name =val1,col2_name =val2 WHERE condition; #更新表内容
+
+
+DELETE FROM tb_name WHERE con #删除内容
+
+ALTER TABLE tb_name ADD INDEX index_name(col_name);# 添加索引
+CREATE INDEX index_name ON tb_name(col_name);#添加索引
+
+SHOW INDEX FROM tb_name ;
+
+CREATE VIEW view_name(col1,col2,colb) AS SELECT cola,colb,colc FROM tb_name; #创建视图
+
+LOAD DATA INFILR "文件路径" INTO TABLE tb_name; #导入数据
+
+CREATE TABLE shirt(
+id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+style ENUM('t-shirt','polo','dress') NOT NULL,
+color ENUM('red','blue','orange','white','black') NOT NULL,
+owner SMALLINT USNGINED NOT NULL REFERENCES person(id),
+PRIMARY KEY(id));
+
+CREATE TABLE new_tb1 like orgin_tb #只复制列属性和索引
+
+CREARE TABLE new_tb1 SELECT  * FEOM orgin_tb;# 完全复制一个表
+
+LOAD DATA INFILE 'persondata.txt' INTO TABLE persondata; # 从文件加载数据到表中
+
+
+
+
+
+
+
+
+
+
+
