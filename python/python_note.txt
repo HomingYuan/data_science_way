@@ -1,0 +1,8 @@
+# scrapy install procedure
+
+1. install wheel: pip install wheel
+2. download decode whl from link: http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml
+3.down scrapy,Twisted please download Twisted before install scrapy(Tip:there are many whl, so you just enter the word on serarch frame on left buttom of the link)
+4.cd to your download path, install Twisted:pip install Twisted.whl(just for a example, please make sure you enter full name)
+5. install scrapy :pip install scrapy.whl(same as above)
+6.Done, you install scarpy successfully and have a try
