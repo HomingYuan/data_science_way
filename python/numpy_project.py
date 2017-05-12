@@ -15,6 +15,8 @@ import time
 def traverse_file(path):
     l = []
     for root, dirs, files in os.walk(path):
+        files=filter(lambda file:file[-4:]=='.mp3',files)
+#        files=map(lambda file:os.path.join(root,file),files)
         for fn in files:
             file = root + "\\" + fn  # 注意是两个斜杠
             l.append(file)
@@ -31,7 +33,7 @@ def play_music_random(path):
 
 
 def main():
-    path = r'D:\CloudMusic\mp3'
+    path = r'D:\CloudMusic'
     playlist1 = traverse_file(path)
     for i in np.arange(len(playlist1)):
         t = playlist1[np.random.randint(0, len(playlist1))]
