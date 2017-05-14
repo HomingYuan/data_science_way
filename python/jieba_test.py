@@ -8,10 +8,11 @@
 """
 
 import jieba
-
-t = (list(jieba.cut("我来自北京清华大学")))
-for i in t:
-    print(i)
+k = ['我来自北京清华大学', '我准备学习计算机']
+for m in k:
+    t = (jieba.cut(m))
+    for i in t:
+        print(i)
 
 
 
