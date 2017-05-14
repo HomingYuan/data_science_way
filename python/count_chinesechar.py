@@ -16,7 +16,7 @@ def count_word(filename):
     d = {}
     with open(filename) as f:
         for line in f:
-            for word in jieba.cut(line):
+            for word in list(jieba.cut(line)):
                 d.setdefault(word, 0)
                 d[word] += 1
     t = [(k, v) for k, v in list(d.items())]
