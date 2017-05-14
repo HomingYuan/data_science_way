@@ -23,7 +23,8 @@ def count_word(filename):
     t = [(k, v) for k, v in list(d.items())]
     t = sorted(t, key=lambda x: x[1], reverse=True)  # 排序
     for key, val in t:
-        print(key, ':', val)
+        if val > 1:
+            print(key, ':', val)
 
 
 def main():
