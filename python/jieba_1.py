@@ -26,6 +26,8 @@ def count_word(filename):
     for key, val in t:
         if val > 1:
             print(key, ':', val)
+    l = [(x,y) for x in d.keys() for y in d.values()]
+    d = sorted(l)
     return d
 
 def write_to_csv(file):
