@@ -21,18 +21,17 @@ def count_word(filename):
             for word in jb_word:
                 d.setdefault(word, 0)
                 d[word] += 1
-    t = [(k, v) for k, v in list(d.items())]
+    t = [(k, v) for k, v in list(d.items()) if v > 2]
     t = sorted(t, key=lambda x: x[1], reverse=True)  # 排序
     for key, val in t:
         if val > 1:
             print(key, ':', val)
-    l = [(x,y) for x in d.keys() for y in d.values()]
-    d = sorted(l)
-    return d
+    return t
+
 
 def write_to_csv(file):
     df = pd.DataFrame(file)
-    df.to_csv('test.csv',index =False,sep = '')
+    df.to_csv('test.csv',index =False,sep = ',')
     
     
 def main():

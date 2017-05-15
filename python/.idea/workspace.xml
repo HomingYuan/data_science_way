@@ -15,7 +15,7 @@
       <file leaf-file-name="day1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../python/python_training/day1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
+            <state relative-caret-position="3300">
               <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding />
             </state>
@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/../../../python/python_training/Day1_homework.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="33">
-              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="day3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../python/python_training/day3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="1419">
+              <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding>
                 <element signature="e#145#158#0" expanded="true" />
               </folding>
@@ -57,8 +57,8 @@
       <file leaf-file-name="day2_homework.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../python/python_training/day2_homework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="36" column="18" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="1155">
+              <caret line="36" column="18" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="37" selection-end-column="10" />
               <folding>
                 <element signature="e#154#164#0" expanded="true" />
               </folding>
@@ -80,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/count_word.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/count_chinesechar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="99">
-              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding>
                 <element signature="e#158#168#0" expanded="true" />
               </folding>
@@ -101,8 +101,8 @@
       <file leaf-file-name="jieba_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jieba_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="330">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -111,11 +111,9 @@
       <file leaf-file-name="jieba_1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jieba_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#148#158#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -693,7 +691,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../python/python_training/day1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
+        <state relative-caret-position="3300">
           <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding />
         </state>
@@ -701,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../python/python_training/day3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="1419">
+          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
             <element signature="e#145#158#0" expanded="true" />
           </folding>
@@ -720,15 +718,15 @@
     <entry file="file://$PROJECT_DIR$/../../../python/python_training/Day1_homework.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../python/python_training/day2_homework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="36" column="18" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="1155">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="37" selection-end-column="10" />
           <folding>
             <element signature="e#154#164#0" expanded="true" />
           </folding>
@@ -746,7 +744,7 @@
     <entry file="file://$PROJECT_DIR$/count_word.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -754,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/count_chinesechar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding>
             <element signature="e#158#168#0" expanded="true" />
           </folding>
@@ -763,19 +761,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jieba_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="330">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jieba_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#148#158#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
