@@ -25,6 +25,7 @@ def count_word(filename):
     for key, val in t:
         if val > 1:
             print(key, ':', val)
+    return d
 
 
 def main():
