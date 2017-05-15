@@ -9,6 +9,7 @@
 import sys
 import os
 import jieba
+import pandas as pd
 
 
 # 统计文件中单词次数
@@ -27,7 +28,11 @@ def count_word(filename):
             print(key, ':', val)
     return d
 
-
+def write_to_csv(file):
+    df = pd.DataFrame(file)
+    df.to_csv('test.csv',index =False,sep = '')
+    
+    
 def main():
     path = input('please enter filename:')
     sys.argv.append(path)
@@ -36,6 +41,7 @@ def main():
         raise SystemExit('{0} not found'.format(filename))
     else:
         count_word(filename)
+    write_to_csv(count_word(filename))
 
 
 if __name__ == '__main__':
