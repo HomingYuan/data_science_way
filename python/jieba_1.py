@@ -27,11 +27,6 @@ def count_word(filename):
                 d[word] += 1
     t = [(k, v) for k, v in list(d.items()) if v >= 1 and k.isalpha()]  # 去除标点符号
     l = sorted(t, key=lambda x: x[1], reverse=True)  # 排序
-    '''
-    for key, val in t:
-        if val > 1:
-            print(key, ':', val)
-    '''
     return l
 
 # 把结果写入到文件中
