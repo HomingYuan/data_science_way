@@ -13,13 +13,13 @@ import pandas as pd
 import datetime
 
 
-start = datetime.datetime.now()
+start = datetime.datetime.now()  # 用来计算代码运行时间
 
 
 # 统计文件中单词次数
 def count_word(filename):
     d = {}
-    with open(filename, 'r', encoding='gb18030') as f:  # 编码问题http://blog.csdn.net/shijing_0214/article/details/51971734
+    with open(filename, 'r', encoding='gb18030') as f:  # 中文编码问题http://blog.csdn.net/shijing_0214/article/details/51971734
         for fword in f:
             jb_word = jieba.cut(fword.strip(), cut_all=True) # 全模式
             for word in jb_word:
@@ -37,7 +37,7 @@ def count_word(filename):
 
 def write_to_csv(file):
     df = pd.DataFrame(file)
-    df.to_csv('dream.csv', index=False, sep=',')
+    df.to_csv('dream.csv', header=['词语','数量'], sep=',')  # 添加标题
     
     
 def main():
