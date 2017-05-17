@@ -27,7 +27,7 @@ def play_music_random(path):
     pygame.mixer.init()
     pygame.mixer.music.load(path)
     pygame.mixer.music.play()
-    while pygame.mixer.music.get_busy() == True:
+    while pygame.mixer.music.get_busy() == True:  # 实现播放完后，播放下一首
         pass
 
 
