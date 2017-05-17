@@ -26,8 +26,9 @@ def traverse_file(path):
 def play_music_random(path):
     pygame.mixer.init()
     pygame.mixer.music.load(path)
-    pygame.mixer.music.play(loops=0, start=0.0)
-    time.sleep(120)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy() == True:
+        pass
 
 
 def main():
