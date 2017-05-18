@@ -15,7 +15,7 @@ font = "DroidSansFallbackFull.ttf"
 
 # Read the whole text.
 #text = open(path.join(d, 'constitution.txt')).read()
-text = open("santi.txt").read()
+text = open("santi3.txt", 'r',encoding='gb18030').read()
 
 # Generate a word cloud image
 wordcloud = WordCloud(font_path=font).generate(text)
@@ -25,13 +25,13 @@ wordcloud = WordCloud(font_path=font).generate(text)
 import matplotlib.pyplot as plt
 plt.imshow(wordcloud)
 plt.axis("off")
-plt.savefig('santi_1.png')
+plt.savefig('santi3_1.png')
 # lower max_font_size
 wordcloud = WordCloud(font_path=font,max_font_size=40).generate(text)
 plt.figure()
 plt.imshow(wordcloud)
 plt.axis("off")
-plt.savefig('santi_2.png')
+plt.savefig('santi3_2.png')
 plt.show()
 
 
