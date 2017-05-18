@@ -17,8 +17,11 @@ def pinyin_to_chinese(x):
     try:
         y += dic[t]
     except:
-        y += '90DD '
-    return y
+        y = '597D'
+    if y == '597d':
+        return
+    else:
+        return y
 
 # dic = pinyin_to_chinese('HAO3')
 # t = [(k, v) for k, v in list(dic.items()) ]
