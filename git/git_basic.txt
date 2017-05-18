@@ -1,3 +1,4 @@
+
 1. 建立个人用户名
 	git config --global user.name "John Doe"
 2. 建立个人邮箱
@@ -17,3 +18,4 @@
 	git pull origin master
 9.复制到本地
 	git clone https://github.com/username/LearningPythonDiary.git master
+
