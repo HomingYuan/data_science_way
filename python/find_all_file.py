@@ -31,13 +31,18 @@ def find_file(path='.'):
         if re.match(find_str, t[0][i]):
             l.append(t[1][i])
     for file_str in l:
-        print(file_str)
+        # print(file_str)
         file_list.append(file_str)
     return file_list
 
 
 def main():
-    find_file()
+    for i in find_file():  # 同时打开多个文件
+        print(i)
+        with open(i, encoding='utf-8') as f:
+            for word in f.readlines():
+                print(word)
+
 
 if __name__ == '__main__':
     main()
