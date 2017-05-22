@@ -5,6 +5,7 @@ Created on Thu May 18 10:14:12 2017
 @author: user
 """
 
+
 def pinyin_to_chinese(x):
     y = ''
     t = ''
@@ -14,10 +15,6 @@ def pinyin_to_chinese(x):
             dic[i.split()[1]] = i.split()[0].upper().strip()
     for j in x:
         t += j.upper()
-    try:
-        y += dic[t]
-    except:
-        y = '597D'
     if y == '597d':
         return
     else:
@@ -34,8 +31,7 @@ def main():
     word = pinyin_to_chinese(x)
     word = r"\u" + word
     print(word.encode().decode('unicode_escape'))
-
     # print('好'.encode('unicode_escape'))
-   #  b'\\u597d' 好 而编码里为597D
+    # b'\\u597d' 好 而编码里为597D
 if __name__ == '__main__':
     main()

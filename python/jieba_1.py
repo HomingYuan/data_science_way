@@ -19,9 +19,10 @@ start = datetime.datetime.now()  # 用来计算代码运行时间
 # 统计文件中单词次数，并按从大到下排序
 def count_word(filename):
     d = {}
-    with open(filename, 'r', encoding='gb18030') as f:  # 中文编码问题http://blog.csdn.net/shijing_0214/article/details/51971734
+    with open(filename, 'r', encoding='gb18030') as f:
+        # 中文编码问题http://blog.csdn.net/shijing_0214/article/details/51971734
         for fword in f:
-            jb_word = jieba.cut(fword.strip(), cut_all=True) # 全模式
+            jb_word = jieba.cut(fword.strip(), cut_all=True)  # 全模式
             for word in jb_word:
                 d.setdefault(word, 0)
                 d[word] += 1
@@ -34,11 +35,11 @@ def count_word(filename):
 
 def write_to_csv(file):
     df = pd.DataFrame(file)
-    df.to_csv('dream.csv', header=['词语','数量'], sep=',')  # 添加标题
+    df.to_csv('dream.csv', header=['词语', '数量'], sep=',')  # 添加标题
     
     
 def main():
-    path = input('please enter filename:') # liunx下 path = sys.argv.append('')
+    path = input('please enter filename:')  # liunx下 path = sys.argv.append('')
     # sys.argv命令行参数 ，sys.argv[0]表示代码本身文件路径，所以参数从1开始
     sys.argv.append(path)
     filename = sys.argv[1]
@@ -54,11 +55,3 @@ if __name__ == '__main__':
 
 end = datetime.datetime.now()
 print('Running time', end - start)  # 计算代码运行时间
-
-
-
-
-
-
-
-
