@@ -30,6 +30,8 @@ def count_word(filename):
     return l
 
 # 把结果写入到文件中
+
+
 def write_to_csv(file):
     df = pd.DataFrame(file)
     df.to_csv('dream.csv', header=['词语','数量'], sep=',')  # 添加标题
