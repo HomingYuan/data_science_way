@@ -116,7 +116,7 @@ def save_pdf(htmls, file_name):
 #----------------------------------------------------------------------
 def main():
     start = time.time()
-    file_name = u"liaoxuefeng_Python3_tutorial"
+    file_name = "liaoxuefeng_Python3_tutorial"
     urls = get_url_list()
     for index, url in enumerate(urls):
         parse_url_to_html(url, str(index) + ".html")
@@ -128,28 +128,28 @@ def main():
 
         save_pdf(str(i)+'.html', file_name+str(i)+'.pdf')
 
-        print (u"转换完成第"+str(i)+'个html' )
+        print ("转换完成第"+str(i)+'个html' )
 
     merger = PdfFileMerger()
     for pdf in pdfs:
         merger.append(open(pdf,'rb'))
-        print (u"合并完成第"+str(i)+'个pdf'+pdf )
+        print ("合并完成第"+str(i)+'个pdf'+pdf )
 
-    output = open(u"廖雪峰Python_all.pdf", "wb")
+    output = open("廖雪峰Python_all.pdf", "wb")
     merger.write(output)
 
-    print (u"输出PDF成功！"  )
+    print ("输出PDF成功！"  )
 
     for html in htmls:
         os.remove(html)
-        print (u"删除临时文件"+html )
+        print ("删除临时文件"+html )
 
     for pdf in pdfs:
         os.remove(pdf)
-        print (u"删除临时文件"+pdf )
+        print ("删除临时文件"+pdf )
 
     total_time = time.time() - start
-    print(u"总共耗时：%f 秒" % total_time)
+    print("总共耗时：%f 秒" % total_time)
 
 #----------------------------------------------------------------------
 def changeDir(dir_name):

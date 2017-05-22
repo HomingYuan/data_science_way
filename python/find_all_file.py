@@ -39,10 +39,12 @@ def find_file(path='.'):
 def main():
     for i in find_file():  # 同时打开多个文件
         print(i)
+        '''
+        下面代码打开文件
         with open(i, encoding='utf-8') as f:
             for word in f.readlines():
                 print(word)
-
+'''
 
 if __name__ == '__main__':
     main()
