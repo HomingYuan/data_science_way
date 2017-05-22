@@ -22,7 +22,5 @@ def pinyin_to_chinese(x):
 con = pinyin_to_chinese(1)
 l = [(k,v) for k,v in con.items()]
 
-df = pd.DataFrame(l)
-df.to_csv('pinyin_unicode.csv',header =['pinyin','unicode'])
-
-print(os.path.abspath('pinyin_unicode.csv'))
+# df = pd.DataFrame(l)
+# df.to_csv('pinyin_unicode.csv',header =['pinyin','unicode'])
