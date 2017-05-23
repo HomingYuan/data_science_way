@@ -22,7 +22,9 @@ def pinyin_to_chinese(x):
     t = x.upper()
     y = m[t]
     return y
-def show_word(t=0):
+
+
+def show_word():
     x = str(input('please enter pinyin:'))
     display_word = []
     words = pinyin_to_chinese(x)
@@ -30,18 +32,16 @@ def show_word(t=0):
         display_word.append(words[m].encode().decode('unicode_escape'))
     print(display_word)
     t = int(input('please choose:'))-1  # chinese custom
-    if t<len(words):
+    if t < len(words):
         print(display_word[t])
     else:
         print('out of range')
         print(display_word[0])
 
+
 def main():
     show_word()
 
-
-    # print('好'.encode('unicode_escape'))
-    #  b'\\u597d' 好 而编码里为597D
 
 if __name__ == '__main__':
     main()
