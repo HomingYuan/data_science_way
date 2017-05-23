@@ -54,11 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pinyin_to_chinese2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pinyin_to_chinese2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pinyin_to_chinese2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="12">
+              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10kindmethod_machine_learning.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10kindmethod_machine_learning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="186" column="32" lean-forward="false" selection-start-line="186" selection-start-column="32" selection-end-line="186" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -102,12 +112,13 @@
         <option value="$PROJECT_DIR$/jieba_1.py" />
         <option value="$PROJECT_DIR$/pinyin_to_chinese.py" />
         <option value="$PROJECT_DIR$/pinyin_to_chinese2.py" />
+        <option value="$PROJECT_DIR$/10kindmethod_machine_learning.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1276" />
-    <option name="y" value="435" />
+    <option name="x" value="973" />
+    <option name="y" value="171" />
     <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
@@ -338,7 +349,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1276" y="435" width="1924" height="1056" extended-state="0" />
+    <frame x="973" y="171" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -402,13 +413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/numpy_project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/numpy_project1.py" />
     <entry file="file://$PROJECT_DIR$/../../../python/code/mat_study.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -720,8 +724,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyin_to_chinese2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        <state relative-caret-position="12">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10kindmethod_machine_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="186" column="32" lean-forward="false" selection-start-line="186" selection-start-column="32" selection-end-line="186" selection-end-column="32" />
           <folding />
         </state>
       </provider>
