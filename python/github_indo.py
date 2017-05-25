@@ -6,7 +6,7 @@
 @file: github_indo.py
 @time: 2017/5/25 21:19
 """
-from github import  Github
+from github import Github
 import datetime
 
 
@@ -26,9 +26,9 @@ def repo_commit_info(user, pwd, repo_name, delta_time=7):
 
 
 def main():
-    user = '470034235@qq.com'
-    pwd = 'HomingYuan1987'
-    repo = 'data_science_way'
+    user = input('username:')
+    pwd = input('passwprd:')
+    repo = input('repository:')
     repo_commit_info(user, pwd, repo, 7)
 
 if __name__ == '__main__':
