@@ -18,5 +18,10 @@
 	git pull origin master
 9.复制到本地
 	git clone https://github.com/username/LearningPythonDiary.git master
+10 cd .. 上一级目录
+11 cd code到你的目录
+12.git clone https://github.com/HomingYuan/scrapy.git
 
-
+13.git add readme.md
+14.git commit -m 'blabla'
+15.git push origin master  # 因为有远程连接不需要git remote add origin https://github.com/HomingYuan/scrapy.git 这一步
