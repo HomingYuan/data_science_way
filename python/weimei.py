@@ -16,12 +16,12 @@ def crawl(url):
     page = urllib.request.urlopen(req, timeout=40)
     contents = page.read()
     soup = BeautifulSoup(contents, 'lxml')  # 加一个解析器
-    my_girl = soup.find_all('img')
+    my_map = soup.find_all('img')
     i = 0
-    for girl in my_girl:
+    for map1 in my_map:
         i += 1
         print("第%d张照片"%i)
-        link = girl.get('src')
+        link = map1.get('src')
         print(link)
         content2 = urllib.request.urlopen(link).read()
         file_path = r'c:/Big_data/pic1' + '/' + link[-11:]
@@ -30,7 +30,7 @@ def crawl(url):
  
 
 
-page_start = 74300
+page_start = 74405
 page_stop = 75600
 for page in range(page_start, page_stop, 1):
     page += 1
