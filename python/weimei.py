@@ -24,7 +24,7 @@ def crawl(url):
         link = map1.get('src')
         print(link)
         content2 = urllib.request.urlopen(link).read()
-        file_path = r'c:/Big_data/pic1' + '/' + link[-11:]
+        file_path = r'd:/Big_data/pic1' + '/' + link[-11:]
         with open(file_path,'wb') as code:
             code.write(content2)
  

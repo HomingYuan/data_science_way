@@ -5,46 +5,52 @@ Created on Sat May 27 10:29:57 2017
 @author: user
 """
 
-
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-
-def get_zhaopin(page):
-    url = 'http://sou.zhaopin.com/jobs/searchresult.ashx?jl=全国&kw=python&p={0}&kt=3'.format(page)
-    print("第{0}页".format(page))
-    wbdata = requests.get(url).content
-    soup = BeautifulSoup(wbdata,'lxml')
-
-    job_name = soup.select("table.newlist > tr > td.zwmc > div > a")
-    salarys = soup.select("table.newlist > tr > td.zwyx")
-    locations = soup.select("table.newlist > tr > td.gzdd")
-    times = soup.select("table.newlist > tr > td.gxsj > span")
-
-    for name, salary, location, time in zip(job_name, salarys, locations, times):
-        data = {
-            'name': name.get_text(),
-            'salary': salary.get_text(),
-            'location': location.get_text(),
-            'time': time.get_text(),
-         }
-
-
-
-    return data
-
-
-if __name__ == '__main__':
-    context = get_zhaopin(1)
-    df = pd.DataFrame(context,index = range(len(context)))
-    write=pd.ExcelWriter("zhaopin.xlsx")
-    df.to_excel(write)
-    write.save()
-
-
-    '''
-    pool = Pool(processes=2)
-    pool.map_async(get_zhaopin,range(1,10))
-    pool.close()
-    pool.join()
-    '''
+from urllib import request
+import re
+import os,glob
+import xlwt
+book = xlwt.Workbook()
+sheet = book.add_sheet('sheet', cell_overwrite_ok=True)
+path = 'D:\\work'
+os.chdir(path)
+result11=[]
+result21=[]
+result31=[]
+result41=[]
+result51=[]
+for k in range(1,91):
+    html=request.urlopen("http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%e5%85%a8%e5%9b%bd&kw=%e6%95%b0%e6%8d%ae%e5%88%86%e6%9e%90%e5%b8%88&sm=0&isfilter=0&fl=489&isadv=0&sg=aae5284f62664af8b14611bda6d68315&p="+str(k)).read() #读取网页源代码内容
+    pat1 = 'onclick="submitLog.*?">(.*?)</a>'
+    pat2 = '<td class="gsmc"><a href="https://ask.hellobi.com/(.*?)" target='
+    pat3 = '<td class="zwyx">(.*?)</td>'
+    pat4 = '<td class="gzdd">(.*?)</td>'
+    pat5 = 'target="_blank">(.*?)<'
+#pat6 = '<span>(.*?)</span>'
+#pat7 = 'target="_blank">(.*?)</a>'
+    result1 = re.compile(pat1).findall(str(html,"utf-8"))
+    result2 = re.compile(pat2).findall(str(html,"utf-8"))
+    result3 = re.compile(pat3).findall(str(html,"utf-8"))
+    result4 = re.compile(pat4).findall(str(html,"utf-8"))
+    result5 = re.compile(pat5).findall(str(html,"utf-8"))
+    result11.extend(result1)
+    result21.extend(result2)
+    result31.extend(result3)
+    result41.extend(result4)
+    result51.extend(result5)
+j = 0
+for i in range(0,len(result11)):
+    try:
+    zhiwei = result11[i]
+    wangzhi = result21[i]
+    gongzi = result31[i]
+    gongzuodidian = result41[i]
+    gongsimingcheng = result51[i]
+    sheet.write(i + 1, j, zhiwei)
+    sheet.write(i + 1, j + 1, wangzhi)
+    sheet.write(i + 1, j + 2, gongzi)
+    sheet.write(i + 1, j + 3, gongzuodidian)
+    sheet.write(i + 1, j + 4, gongsimingcheng)
+    except Exception as e:
+        print('出现异常：' + str(e))
+    continue
+book.save('d:\\shujufenxishi.xls')
