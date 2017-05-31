@@ -10,8 +10,8 @@ import yagmail
 
 yag = yagmail.SMTP(user='470034235@qq.com', password='tahequumnrykcbdh', host='smtp.qq.com', port=25)
 
-content = ['day5_6homework', 'you can find it from attached', 'day5_6homework.py']
-yag.send(['470034235@qq.com', 'me@mingxinglai.com'], 'this mail come from hongming',content)
+content = ['sklearn', 'you can find it from attached', 'sklearn.7z']
+yag.send(['470034235@qq.com'], 'this mail come from hongming',content)
 
 
 
