@@ -25,3 +25,5 @@
 13.git add readme.md
 14.git commit -m 'blabla'
 15.git push origin master  # 因为有远程连接不需要git remote add origin https://github.com/HomingYuan/scrapy.git 这一步
+
+16 退回到想回的版本，先git log 查看提交日志，根据提交日志，拿到commit_id， 然后git reset --hard commit_id
