@@ -15,7 +15,7 @@ bsObj = BeautifulSoup(html)
 #The main comparison table is currently the first table on the page
 table = bsObj.findAll("table",{"class":"wikitable"})[0]
 rows = table.findAll("tr")
-csvFile = open(r"D:\Big_data\scrap_download\editors.csv", 'wt',encoding='utf-8')  # need add encoding
+csvFile = open(r"D:\Big_data\scrap_download\editors.csv", 'wt', encoding='utf-8')  # need add encoding
 writer = csv.writer(csvFile)
 
 try:
