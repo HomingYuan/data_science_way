@@ -16,7 +16,7 @@ with open('51job.htm',encoding='utf-8') as f:
     soup = BeautifulSoup(f, 'lxml')
 
 
-fo = open('python_sal.csv', 'w', encoding='gbk') # 打开文件，并准备写入
+# fo = open('python_sal.csv', 'w', encoding='gbk') # 打开文件，并准备写入
 
 # 1.tag 标签
 # fo.write(soup.prettify()) #写入文件
@@ -186,8 +186,9 @@ for link in soup.find_all('a'):
 for link in soup.find_all('span'):
     print(link.attrs)
 '''
-# print(soup.find_all('span', class_='t2'))
 '''
+print(soup.find_all('span', class_='t2'))
+
 for com in soup.find_all('span', class_='t2'):
     print(com.get_text())
 
@@ -196,7 +197,7 @@ for loc in soup.find_all('span', class_='t3'):
 
 for sal in soup.find_all('span', class_='t4'):
     print(sal.get_text())
-'''
+
 l = []
 for pos in soup.find_all('span', class_=['t2','t3','t4']):
     text = pos.get_text().strip()
@@ -215,3 +216,14 @@ for i in range(len(l)):
     if i%3 ==2:
         fo.write(l[i])
         fo.write('\n')
+'''
+# limit 参数
+
+'''
+for link in soup.find_all('a',limit=10):
+    if 'href' in link.attrs:
+        print(link.attrs['href'])
+'''
+
+
+

@@ -1,0 +1,2 @@
+1. excel 读取csv乱码时，可以将csv编码改为ansi
+2. python爬虫时，header，UA设置，查看元素-网络-点击第一个-右边找相关信息
