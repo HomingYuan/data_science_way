@@ -1,0 +1,38 @@
+.panel_lnp{border:1px solid #D7D7D7}
+.panel_lnp h2{position:relative;height:44px;line-height:44px;font-size:14px;font-family:"Microsoft YaHei";color:#737373;background-color:#EDEDED;border-bottom:1px solid #D7D7D7}
+.panel_lnp h2 p{font-weight:normal;font-size:14px;line-height:44px;margin-left:10px}
+.panel_lnp h2 a{position:absolute;display:block;width:44px;height:44px;top:0;right:0;background-color:#E2E2E2}
+.panel_lnp h2 a:hover{background-color:#D7D7D7}
+.panel_lnp h2 a i {display:block;width:10px;height:9px;overflow:hidden;margin:16px auto;background:url("http://img01.51jobcdn.com/im/resume/iconMain.png") -26px -27px no-repeat}
+.panel_lnp .panel_btn_s{cursor:pointer;display:inline-block;font-weight:bold;color:#FFF;margin:0 0px;text-decoration:none;padding:6px 20px;background-color:#F56101;border:0;}
+.panel_lnp .panel_btn_s:hover{background-color:#E25800}
+.panel_lnp .l-h34{line-height:34px !important}
+.panel_lnp .pannel_body *,.panel_lnp a{font-size:12px;font-family:"Microsoft YaHei"}
+.panel_py{width:520px}
+.panel_py strong{font-weight:bold}
+.panel_py .tstrong{font-weight:bold;font-size:16px;color:#F56101}
+.panel_py .pannel_body{line-height:24px;color:#5E5E5E;padding:15px;background-color:#F7F7F7}
+.panel_py .p{margin-bottom:10px}
+.panel_py .gp{padding-top:35px;padding-bottom:35px}
+.panel_py .gp2{padding:10px 2em 20px}
+.panel_py .center{text-align:center}
+.panel_py .rdbox{display:inline-block;height:30px;line-height:30px;margin-right:40px}
+.panel_py .rdbox input{position:relative;vertical-align:middle;top:-2px;margin-right:10px}
+.panel_py .title{padding:10px 0 25px;border-bottom:1px dotted #C1C1C1}
+.panel_py .t_right{text-align:right}
+.panel_py  center{position:relative}
+.panel_py  center .t_right{position:absolute;height:20px;line-height:20px;top:50%;right:0;margin-top:-10px}
+.panel_py .link{color:#2D64B3}
+.panel_py .link:hover{color:#FF7300}
+.panel_py .tb{margin:0 auto;border-collapse:collapse;border-spacing:0;border-bottom:1px solid #DDD}
+.panel_py .tb th,.panel_py .tb td{height:28px;padding:0;border:1px solid #DDD}
+.panel_py .tb th{background-color:#E6E6E6}
+.panel_py .tb td{width:128px;text-align:center;border-top-style:dashed;border-bottom-style:dashed}
+.panel_py .cl_orange{color:#F56101}
+.panel_py .tagbox{margin-bottom:20px;padding:0 15px}
+.panel_py .tagbox .e{position:relative;padding-left:75px}
+.panel_py .tagbox label{position:absolute;height:26px;line-height:26px;top:0;left:0}
+.panel_py .tagbox label.l2{line-height:20px;top:11px}
+.panel_py .tagbox textarea{width:274px;line-height:20px;padding:10px;background-color:#FFF;border:1px solid #B1B1B1}
+.panel_py .tags span{display:inline-block;height:26px;line-height:26px;color:#333;margin:0 15px 15px 0;padding:0 10px;background-color:#FFF;border:1px solid #FF9F20}
+.panel_py .ft14{font-size:14px !important}

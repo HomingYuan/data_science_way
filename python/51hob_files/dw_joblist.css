@@ -1,0 +1,277 @@
+input,button,textarea{outline:none}
+
+.dw_wp{position:relative;width:1002px;font:12px/24px "Microsoft YaHei";margin:0 auto 10px}
+.dw_wp *,.dw_wp a{font-family:"Microsoft YaHei"}
+.dw_wp .clear{clear:both}
+.dw_wp .mytxt{padding:0}
+.dw_wp .og_but{color:#666;text-align:center;cursor:pointer;background-color:#FFF;border:1px solid #DDD}
+.dw_wp .og_but:hover{color:#FF6000;border-color:#FF6000}
+.dw_wp .tit{height:90px;line-height:90px;font-size:20px;color:#333;margin-bottom:-10px}
+.dw_wp .tit span{padding-left:20px;border-left:3px solid #ff6100}
+
+.dicon{background:url(http://img01.51jobcdn.com/im/jobs/list_icon_dw.png) no-repeat}
+
+/*------搜索条件------*/
+.dw_search{position:relative;height:38px;margin-bottom:10px;padding:14px 15px;background-color:#F5F5F5;border:1px solid #DDD;border-top:0 none;z-index:2}
+.dw_search .el{position:relative;float:left;height:34px;line-height:34px;/*overflow:hidden;*/margin-right:10px;border:2px solid #FF6000}
+.dw_search .val{float:left;width:150px;height:34px;font:14px/34px "Microsoft YaHei";color:#333;padding:0 0 0 10px;background-color:#FFF;border:0 none}
+.dw_search .add{float:left;width:38px;height:34px;font:14px/34px "Microsoft YaHei";color:#333;cursor:pointer;background-color:#EFEFEF;border-left:1px solid #DDD}
+.dw_search .add:hover,.dw_search .addbut:hover,.dw_search .addbut:hover input{background-color:#DDD}
+.dw_search .addbut{float:left;width:98px;height:34px;font-family:"Microsoft YaHei";color:#333;cursor:pointer;background-color:#EFEFEF;border-left: 1px solid #DDD}
+.dw_search .addbut input{float:left;width:74px;height:34px;line-height:34px;font-size:14px;color:#333;cursor:pointer;background-color:#EFEFEF;border:0 none}
+.dw_search .add em,.dw_search .addbut em{float:right;width:10px;height:10px;margin:12px 14px 0 0;background-position:-75px -85px}
+.dw_search .add.a2 em{position:absolute;margin:0;top:12px;right:14px}
+.dw_search .ipt{position:relative;float:left;width:246px;height:34px;padding:0 5px 0 98px;background-color:#FFF}
+.dw_search .mytxt{float:left;width:100%;height:34px;font:14px/34px "Microsoft YaHei";color:#000;text-align:left;border:0 none}
+.dw_search .search_but{position:absolute;width:27px;height:34px;cursor:pointer;top:0;left:71px;background-position:-63px -100px}
+.dw_search .s_but{float:right}
+.dw_search ul{position:absolute;width:70px;height:34px;line-height:34px;color:#333;overflow:hidden;cursor:pointer;top:0;left:0;background-color:#EFEFEF;border-right:1px solid #DDD;z-index:3}
+.dw_search ul em{position:absolute;width:10px;height:6px;top:15px;right:8px;background-position:-170px -60px !important}
+.dw_search li{font-size:14px;text-indent:10px}
+.dw_search li a{display:block;height:33px;color:#333}
+.dw_search li a:hover{color:#FF6000;background-color:#EFEFEF}
+.dw_search li a,.dw_search li a:hover{font:14px/33px "Microsoft YaHei"}
+.dw_search ul.on{width:69px;height:66px;line-height:32px;background-color:#FFF;border:1px solid #DDD}
+.dw_search ul.on li{height:33px;text-indent:9px}
+.dw_search ul.on em{top:14px;background-position:-150px -60px !important}
+.dw_search .el.on .ul{width:auto;top:34px;right:-2px;left:-2px}
+.dw_search .og_but{float:right;width:82px;_width:75px;height:38px;line-height:38px;font-size:16px}
+.dw_search .lx{display:none;position:absolute;width:450px;top:36px;left:-2px;background-color:#FFF;border:1px solid #DDD;border-top:0 none;z-index:33}
+.dw_search .lx a{display:block;height:24px;line-height:24px}
+.dw_search .lx a span{float:left;color:#333;margin-left:10px}
+.dw_search .lx a em{float:right;color:#888;margin-right:10px}
+.dw_search .lx a:hover{background-color:#EFEFEF}
+.dw_search .lx a:hover span,.dw_search .lx a:hover em{color:#F66000}
+/*------搜索条件 END------*/
+
+/*------过滤条件------*/
+.dw_filter{position:relative;line-height:34px;margin-bottom:33px;border:1px solid #DDD;border-bottom:0 none;z-index:1}
+.dw_filter .el{display:none;position:relative;height:34px;overflow:hidden;padding:0 135px 0 105px;border-bottom:1px dotted #DDD;z-index:2}
+.dw_filter .el.e2{height:34px;overflow:hidden !important;padding-left:95px;padding-right:0}
+.dw_filter .el.show{overflow:auto;border-bottom:0 none}
+.dw_filter .el.mk,.dw_filter.on .el{display:block}
+.dw_filter .el.on{height:auto}
+.dw_filter .title{position:absolute;width:85px;height:34px;color:#888;top:0;left:15px;_position:static;_float:left;_margin-left:-85px}
+.dw_filter ul{width:760px;color:#333}
+.dw_filter li{float:left;white-space:nowrap;cursor:pointer;margin-right:25px}
+.dw_filter .e2 li{margin-right:15px}
+.dw_filter li a{font-family:"Microsoft YaHei";color:#333}
+.dw_filter li a:hover{color:#FF6000}
+.dw_filter .ote{width:905px;overflow:hidden !important}
+.dw_filter .ote li{position:relative;padding:0 20px 0 10px;background:url(http://img01.51jobcdn.com/im/jobs/ote_arr.png) right 16px no-repeat}
+.dw_filter .ote li:hover{background-position:right -18px}
+.dw_filter .ote li.on{line-height:32px;background-position:right -52px;border:1px solid #DDD;border-bottom-color:#FFF}
+.dw_filter .ote li.on:hover{background-position:right -86px}
+.dw_filter .ote li span{float:left}
+.dw_filter .ote li span.dw_c_orange{max-width:6em;overflow:hidden}
+.dw_filter .kel{position:relative;line-height:34px;top:-1px;padding-left:5px;border-top:1px solid #DDD;z-index:1}
+.dw_filter .kel a{display:inline-block;color:#333;font-family:Arial,"Microsoft YaHei";white-space:nowrap;margin:0 15px 0 10px}
+.dw_filter .kel a:hover{color:#FF6000}
+.dw_filter .nk{margin:0 15px 10px 10px;border:1px solid #DDD}
+.dw_filter .nk a{margin-left:15px}
+.dw_filter .more,.dw_filter .dx{position:absolute;height:20px;line-height:20px;color:#333;cursor:pointer;top:6px}
+.dw_filter .more{width:40px;right:75px;background-position:-143px -122px}
+.dw_filter .more:hover{background-position:-143px -162px}
+.dw_filter .el.on .more{background-position:-143px -142px}
+.dw_filter .el.on .more:hover{background-position:-143px -182px}
+.dw_filter .dx{width:43px;text-indent:16px;right:15px;background-color:#FFF;background-position:-71px -40px;border:1px solid #E8E8E8}
+.dw_filter .dx:hover{background-position:-71px -60px}
+.dw_filter .op{position:relative;top:-1px;border-top:1px solid #DDD;z-index:2}
+.dw_filter .op span{position:absolute;width:130px;height:22px;line-height:22px;text-indent:20px;cursor:pointer;top:-1px;left:50%;margin-left:-66px;background-color:#FFF;border:1px solid #DDD;border-top-color:#FFF;z-index:3}
+.dw_filter .op span:hover,.dw_filter .dx:hover,.dw_filter .more:hover,.dw_filter li:hover{color:#FF6000}
+.dw_filter .op em{position:absolute;width:15px;height:7px;top:8px;margin-left:3px;background-position:-170px -80px}
+.dw_filter.on .op em{background-position:-150px -80px}
+.dw_filter .op span:hover em{background-position:-170px -100px}
+.dw_filter.on .op span:hover em{background-position:-150px -100px}
+.dw_filter .dline_text_bot{margin:0 0 7px;border-color:#DDD}
+.dw_filter .dline_text_bot a{font-family:"Microsoft YaHei"}
+/*------过滤条件 END------*/
+
+/*------已选条件------*/
+.dw_choice{position:relative;min-height:34px;height:auto !important;height:34px;overflow:visible;background:#FFF;border:1px solid #DDD}
+.dw_choice .in{position:relative;width:1000px;min-height:34px;margin:0 auto}
+.dw_choice.fix{position:fixed;width:100%;padding:5px 0;top:0;left:0;background-color:#F9F9F9;border-left:0 none;border-right:0 none;z-index:9;
+	-webkit-box-shadow:0 0 4px #CCC;-moz-box-shadow:0 0 4px #CCC;-ms-box-shadow:0 0 4px #CCC;-o-box-shadow:0 0 4px #CCC;box-shadow:0 0 4px #CCC}
+.dw_choice.fix{_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop))}
+.dw_choice.fix .fxwp{position:relative;width:1002px;margin:0 auto}
+.dw_choice.fix span,.dw_choice.fix p{font-size:14px}
+.dw_choice p{line-height:22px;color:#333;margin:0 100px 0 105px;padding:6px 0}
+.dw_choice.fix p{margin-left:115px}
+.dw_choice .title{position:absolute;height:34px;line-height:34px;top:50%;left:15px;margin-top:-17px;padding-left:25px;background-position:-70px -134px}
+.dw_choice .og_but{display:none;position:absolute;width:60px;height:30px;line-height:30px;font-size:14px;font-family:"Microsoft YaHei";top:50%;right:15px;margin-top:-15px}
+.dw_choice.fix .og_but{display:block}
+/*------已选条件 END------*/
+
+
+/*------列表表格------*/
+.dw_table{position:relative;color:#888;margin-top:10px;background-color:#FFF;border-left:1px solid #DDD;border-right:1px solid #DDD}
+.dw_table .el{height:40px;line-height:40px;font-size:14px;overflow:hidden;padding:0 5px;border-bottom:1px dotted #DDD}
+.dw_table .el:hover,.dw_table .hover{background-color:#F4F4F4}
+.dw_table .el.mk{background-color:#F3F9FF}
+.dw_table .mk:hover{background-color:#E7F0F8}
+.dw_table .title{height:30px;line-height:30px;text-align:center;border-bottom:1px solid #DDD}
+.dw_table .title span{height:30px !important;line-height:30px !important;font-size:12px;color:#888}
+.dw_table .t1,.dw_table .t2,.dw_table .t3,.dw_table .t4,.dw_table .t5{float:left;height:40px;line-height:40px !important;font-size:14px;overflow:hidden;padding:0 10px}
+.dw_table .t1{position:relative;width:315px}
+.dw_table .t1.tg a{max-width:250px}
+.dw_table .t1.tg img,.dw_table .t1.tg2 img{position:absolute;top:15px;right:-30px}
+.dw_table .t1.tg2 a{max-width:220px}
+.dw_table .t1.tg2 .tag2{right:-60px}
+.dw_table .t1 span{position:relative}
+.dw_table .t1 a,.dw_table .t1 a span{font-size:16px;font-family:"Microsoft YaHei";color:#000}
+.dw_table .t1 a{position:relative;float:left;max-width:285px;height:40px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.dw_table .t2{width:255px;color:#333}
+.dw_table .t2 a,.dw_table .t2 a span{font-size:14px;font-family:"Microsoft YaHei";color:#333}
+.dw_table .t1 a:link{color:#000}
+.dw_table .t2 a:link{color:#333}
+.dw_table .t2 a:visited,.dw_table .t1 a:visited{color:#772360}
+.dw_table .t2 a:hover,.dw_table .t1 a:hover{color:#FF6000}
+.dw_table .t2 a:active,.dw_table .t1 a:active{color:#772360}
+.dw_table .t3{width:100px;text-align:center}
+.dw_table .t4{width:130px;font-size:16px;color:#FF6000;text-align:center}
+.dw_table .t5{width:90px;text-align:center}
+.dw_table .ckbox{float:left;width:16px;height:16px;cursor:pointer;margin:18px 9px 0 0;_margin-right:5px;background-position:-2px -42px}
+.dw_table .ckbox.checked{background-position:-27px -42px}
+.dw_table .checkbox{position:relative;float:left;top:11px;*top:10px;margin-right:10px;_margin-right:5px}
+.dw_table .j,.dw_table .s{position:relative;_position:absolute;display:inline-block;width:27px;font:12px/16px "SimSun";color:#FFF;text-align:center;top:-2px;_top:16px;margin-left:3px;background-color:#FF6000}
+.dw_table .s{width:14px;background-color:#55CB60}
+
+.dw_tlc{position:relative;height:42px;line-height:42px;top:-1px;background-color:#F8F8F8;border-top:1px solid #DDD;border-bottom:1px solid #DDD;z-index:1}
+.dw_tlc .chall{float:left;width:80px;height:42px;border-right:1px solid #DDD}
+.dw_tlc .op{float:left;padding-left:5px}
+.dw_tlc .op span{float:left;width:123px;height:26px;line-height:26px;cursor:pointer;margin:7px 0 0 30px}
+.dw_tlc .op i{float:left;width:20px;height:20px;margin:3px 2px 0 25px}
+.dw_tlc .but_sq{color:#FFF;background-color:#FF6000;border:1px solid #FF6000}
+.dw_tlc .but_sq:hover{background-color:#EA5800}
+.dw_tlc .but_sq i{background-position:-70px 0}
+.dw_tlc .but_sc{color:#FF6000;background-color:#FFF2E3;border:1px solid #FFB865}
+.dw_tlc .but_sc:hover{background-color:#FFE8CD}
+.dw_tlc .but_sc i{background-position:-70px -20px}
+.dw_tlc .rt{position:relative;float:right;width:118px;height:42px;text-align:center;border-left:1px solid #DDD}
+.dw_tlc #rtPrev,.dw_tlc #rtNext{position:absolute;width:8px;height:14px;top:14px;left:15px;background-position:-150px 0}
+.dw_tlc #rtNext{left:auto;right:15px;background-position:-170px 0}
+.dw_tlc #rtPrev.on{background-position:-150px -20px}
+.dw_tlc #rtNext.on{background-position:-170px -20px}
+.dw_tlc #rtPrev.on:hover{background-position:-150px -40px}
+.dw_tlc #rtNext.on:hover{background-position:-170px -40px}
+.dw_tlc .rt .on{cursor:pointer}
+.dw_tlc .order_time,.dw_tlc .order_auto{position:relative;font-size:14px;text-indent:23px;cursor:pointer}
+.dw_tlc .order_time:hover,.dw_tlc .order_auto:hover{background-color:#E0E0E0}
+.dw_tlc .order_time em,.dw_tlc .order_auto em{position:absolute;width:20px;height:20px;top:11px;left:16px;z-index:2}
+.dw_tlc .order_time em{background-position:0 -20px}
+.dw_tlc .order_time .on{background-position:-25px -20px}
+.dw_tlc .order_auto .on{background-position:-25px 0}
+.dw_tlc .order_time a,.dw_tlc .order_auto a{position:relative;display:block;height:42px;font-family:"Microsoft YaHei";font-size:14px;color:#888;z-index:1}
+.dw_tlc .order_time a:hover,.dw_tlc .order_auto a:hover{background-color:#E0E0E0}
+.dw_tlc .order_time.dw_c_orange a,.dw_tlc .order_auto.dw_c_orange a{color:#FF6000}
+.dw_tlc .ckbox{margin-top:13px;margin-left:15px}
+.dw_tlc .checkbox{top:12px;*top:11px;left:15px;margin-right:25px;_margin-right:19px}
+.dw_tlc .sbox{float:right;margin:7px 15px 0 0}
+.dw_tlc .sbox .list_tab_search_btn{float:left;width:45px;height:26px}
+.dw_tlc .ipt{float:left;width:153px;height:24px;line-height:24px;overflow:hidden;padding:0 5px;background-color:#FFF;border:1px solid #DDD;border-right:0 none}
+.dw_tlc .ipt .mytxt{width:100%;height:22px;font:12px/22px "Microsoft YaHei";border:0 none}
+.dw_tlc .og_but{float:left;width:45px;height:26px;line-height:26px}
+
+.dw_nomsg{line-height:200px;font-size:14px;color:#333;text-align:center}
+
+.dw_hot{position:absolute;width:170px;top:0;left:1002px;background-color:#FFF;z-index:5}
+.dw_hot .name{height:44px;line-height:42px;font-weight:bold;font-size:18px;color:#FF6000;text-indent:10px;background-position:15px -175px;_border:1px solid #F8F8F8}
+.dw_hot ul{margin:0 auto}
+.dw_hot li{padding:0px 10px 5px}
+.dw_hot .cname,.dw_hot .ctitle{font:14px/20px "Microsoft YaHei" !important;color:#000 !important}
+.dw_hot .ctitle{color:#666 !important}
+.dw_hot .cname:hover,.dw_hot .ctitle:hover{font:14px/24px "Microsoft YaHei";color:#FF6000 !important}
+/*------列表表格 END------*/
+
+/*------意见反馈------*/
+.dw_fb{position:fixed;width:48px;height:48px;overflow:hidden;text-indent:-200px;text-decoration:none !important;bottom:10px;margin-left:1012px;background:url(http://img01.51jobcdn.com/im/jobs/fb_img.png) 0 -48px no-repeat}
+.dw_fb:hover{background-position:0 0}
+/*------意见反馈 END------*/
+
+/*------相似职位------*/
+.dw_likejob{position:relative;line-height:20px;color:#000;margin:20px 0;padding:0 16px 0 106px}
+.dw_likejob span{position:absolute;color:#888;left:16px;_margin-left:-106px}
+.dw_likejob a{font-family:"Microsoft YaHei";color:#333;white-space:nowrap;margin-right:25px}
+.dw_likejob a:hover{color:#FF6000}
+/*------相似职位 END------*/
+
+/*------分页------*/
+.dw_page{position:relative;height:30px;line-height:30px;color:#666;overflow:hidden;padding:30px 0}
+.dw_page .p_box{position:absolute;width:200%;left:-50%}
+.dw_page .p_wp{position:absolute;margin-left:50%}
+.dw_page .p_in{position:relative;float:left;left:-50%}
+.dw_page ul,.dw_page .td,.dw_page .mytxt,.dw_page .og_but{float:left;font-size:14px}
+.dw_page ul{height:30px}
+.dw_page li{float:left;width:30px;height:30px;line-height:30px;text-align:center;margin-right:10px;background-color:#FFF}
+.dw_page li a{display:block;width:30px;font-size:12px;color:#666;border:1px solid #DDD}
+.dw_page li a:hover{color:#FF6000;border-color:#FF6000}
+.dw_page li.on{color:#FF6000;border-color:transparent}
+.dw_page li.bk,.dw_page li.bk a{width:64px}
+.dw_page li.bk span{display:block;color:#BBB;font-size:12px;border:1px solid #DDD}
+.dw_page .mytxt{width:28px;height:28px;font:12px/28px "Microsoft YaHei";color:#333;text-align:center;margin:0 5px;border:1px solid #DDD}
+.dw_page .og_but{width:45px;height:30px;line-height:30px;margin-left:10px}
+/*------分页 END------*/
+
+/*------浮层------*/
+.dw_Fixpop{width:791px;border-style:solid;border-color:#FF6000;border-width:5px 1px 1px}
+.dw_Fixpop .tp{height:26px;line-height:26px;padding-left:17px;border-bottom:1px solid #DDD}
+.dw_Fixpop .tp p{float:left;font-weight:bold;color:#333;font-size:12px}
+.dw_Fixpop .tp p span{font-weight:normal;color:#888}
+.dw_Fixpop .but_ok,.dw_Fixpop .but_cancel{float:right;width:42px;height:26px;font-size:12px;color:#FFF;text-align:center;cursor:pointer;background-color:#FF9945}
+.dw_Fixpop .but_ok:hover{background-color:#FF7400}
+.dw_Fixpop .but_cancel{color:#FF6000;background-color:#FFF}
+.dw_Fixpop .but_cancel:hover{background-color:#EFEFEF}
+.dw_Fixpop .vbox{position:relative}
+.dw_Fixpop .vbox span{float:left;width:109px;height:20px;line-height:20px;font-size:12px;margin:12px 20px 0 0}
+.dw_Fixpop .vbox span:hover{color:#FF6000}
+.dw_Fixpop .vwp{float:left;width:774px;padding-left:17px;padding-bottom:12px}
+.dw_Fixpop .ckbox{float:left;width:16px;height:16px;cursor:pointer;margin:3px 4px 0 0;background-position:-2px -42px}
+.dw_Fixpop .checked{color:#FF6000}
+.dw_Fixpop .checked .ckbox{background-position:-27px -42px}
+/*------浮层 END------*/
+
+/*------pop------*/
+.panel_lnp{font:14px/1.8 Arial,Helvetica,sans-serif,"宋体",tahoma,Srial,helvetica,sans-serif;border:1px solid #D7D7D7}
+.panel_lnp h2{position:relative;height:44px;line-height:44px;color:#737373;background-color:#EDEDED;border-bottom:1px solid #D7D7D7}
+.panel_lnp h2 p{font-weight:normal;font-size:14px;margin-left:10px}
+.panel_lnp h2 a{position:absolute;display:block;width:44px;height:44px;top:0;right:0;background-color:#E2E2E2}
+.panel_lnp h2 a:hover{background-color:#D7D7D7}
+.panel_lnp h2 a i {display:block;width:10px;height:9px;overflow:hidden;margin:16px auto;background:url("http://img01.51jobcdn.com/im/resume/iconMain.png") -26px -27px no-repeat}
+.panel_lnp .panel_btn_s{display:inline-block;font-weight:bold;color:#FFF;margin:0 4px;text-decoration:none;padding:6px 20px;background-color:#F56101}
+.panel_lnp .panel_btn_s:hover{background-color:#E25800}
+.panel_fb{width:520px}
+.panel_fb .pannel_body{line-height:24px;color:#5E5E5E;padding:20px 15px;background-color:#F7F7F7}
+.panel_fb .el{position:relative;margin-bottom:15px;padding-left:70px}
+.panel_fb .el label{position:absolute;line-height:34px;color:#5E5E5E;top:0;left:0}
+.panel_fb .el label span{font-weight:700;font-family:"SimSun";padding-left:5px}
+.panel_fb .el textarea,.panel_fb .el .intxt{width:398px;line-height:18px;padding:10px;border:1px solid #B1B1B1}
+.panel_fb .el .intxt{height:32px;line-height:32px;padding:0 10px}
+.panel_fb .note{line-height:22px;padding-left:18px;background:url(http://img01.51jobcdn.com/im/jobs/icon_note.png) 0 center no-repeat}
+.panel_fb center{padding-top:20px}
+/*------pop END------*/
+
+/*------颜色------*/
+.dw_c_orange{color:#FF6000 !important}
+.dw_c_alert{color:#F56101 !important}
+/*------颜色 END------*/
+
+#KwdSearchResult a{position:relative;display:block;height:24px;line-height:24px;color:#333;font-family:"Microsoft YaHei";text-indent:10px}
+#KwdSearchResult a:hover{color:#F66000;background-color:#EFEFEF}
+#KwdSearchResult a:hover .resultNumble{color:#F66000}
+#KwdSearchResult a .resultNumble{position:absolute;color:#888;top:0;right:10px}
+
+.mainleft.s_search.search_btm0 td{padding:4px}
+#demo table td{padding:0}
+
+/*------相关推荐------*/
+.dw_recommend{position:relative;min-height:34px;height:auto !important;height:34px;overflow:visible;margin-bottom:10px;background-color:#FFF;border:1px solid #E8E8E8}
+.dw_recommend .title{position:absolute;height:34px;line-height:34px;color:#888;top:50%;left:15px;margin-top:-17px}
+.dw_recommend p{line-height:22px;margin-left:105px;padding:6px 0;clear:both}
+.dw_recommend p:after{display:block;height:0;content:'\00a0';clear:both;}
+.dw_recommend p a{float:left;font-family:Arial,"Microsoft YaHei";white-space:nowrap;margin-right:25px}
+/*------相关推荐 END------*/
+
+/*------返回顶部------*/
+#goTop{position:fixed;display:none;width:48px;height:40px;line-height:16px;color:#FFF;font-size:0;text-align:center;bottom:68px;margin-left:1012px;padding-top:8px;background:url(http://img01.51jobcdn.com/im/jobs/img_top.png) center center #C1C1C1 no-repeat}
+#goTop:hover{font-size:12px;background:#FF6000}
+/*------返回顶部 END------*/

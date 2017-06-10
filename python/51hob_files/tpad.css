@@ -1,0 +1,22 @@
+.jad{position:relative;width:1000px;height:108px;line-height:20px;font-size:12px;font-family:"Microsoft YaHei";color:#000;overflow:hidden;margin:10px auto;background-color:#FFF;border:1px solid #EEE}
+.jad *,.jad a{font-family:"Microsoft YaHei"}
+.jad .bt,.jad .pt span,.jad .tg,.jad .tg em,.jad .zp{background:url(http://img01.51jobcdn.com/im/jobs/tpad.png) no-repeat}
+.jad .bt{display:none;position:absolute;width:40px;height:54px;cursor:pointer;top:50%;left:0;margin-top:-27px;background-position:0 -25px;z-index:2}
+.jad .pt{position:absolute;width:100%;height:10px;font-size:0;text-align:center;left:0;bottom:7px;z-index:2}
+.jad .pt span{display:inline-block;width:10px;height:10px;font-size:0;cursor:pointer;margin:0 7px;background-position:-120px -25px}
+.jad .pt .mk{background-position:-100px -25px}
+.jad .next{left:auto;right:0;background-position:-50px -25px}
+.jad .inner{position:absolute;width:100%;height:108px;top:0;left:0;z-index:1}
+.jad a{text-decoration:none}
+.jad a:hover{text-decoration:underline}
+.jad .e{position:relative;float:left;width:912px;height:93px;padding:15px 0 0 88px}
+.jad .e2{width:985px;padding-left:15px}
+.jad p{height:20px;overflow:hidden;margin:0 0 5px 0;padding:0}
+.jad img{position:absolute;top:22px;left:15px;border:1px solid #DCDCDC}
+.jad .cname{float:left;font-size:16px;color:#000}
+.jad .tg,.jad .tg em{float:left;height:20px;color:#D78402;background-position:right -90px}
+.jad .tg{margin-left:10px;padding-right:5px}
+.jad .tg em{font-style:normal;padding-left:11px;background-position:left -90px}
+.jad .info{color:#888;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.jad .zp{height:22px;line-height:22px;padding-left:50px}
+.jad .zp a{line-height:22px;font-size:16px;color:#FF6000;margin-right:10px}

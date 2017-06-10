@@ -31,8 +31,7 @@ def get(html):
 
 
 def excel_write(items,index):
-    l=[]
-
+    l = []
 #爬取到的内容写入excel表格
     for item in items:  # 职位信息
         for i in range(0, 5):

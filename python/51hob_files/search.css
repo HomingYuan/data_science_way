@@ -1,0 +1,1610 @@
+/*
+===============================
+文件名称：search.css
+创建时间：2009-03-03
+创 建 者：junjie Zhang
+版    本：www.51job.com_V1.0
+功能描述：职位搜索
+===============================
+修 改 者：
+修改时间：
+修 改 点：
+===============================
+*/
+/*顶部的位置*/
+.navbtbg{
+	background-image: url(http://img01.51jobcdn.com/im/2009/navbtbg.gif);
+	background-repeat: repeat-x;
+	*margin-top:-5px;
+	_margin-top:-5px;
+	height:31px;
+}
+body { background-color:#ffffff; }
+* { font-size: 12px; }
+#areaver span a:link
+{
+	font-family: Arial,Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #ff7300;
+}
+
+#areaver span a:hover
+{
+	font-family: Arial,Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: underline;
+	color: #ff7300;
+}
+
+#areaver span a:visited
+{
+	font-family: Arial,Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #ff7300;
+}
+/**/
+.jobtop
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/jobtopbg.gif);
+	background-repeat: repeat-x;
+	height:49px;
+	line-height:40px;
+}
+.mjob_left {
+	font-size:14px;
+	font-weight:bold;
+	margin-left:20px;
+	float:left;
+}
+.mjob_right {
+	margin-right:50px;
+	margin-top:5px;
+	float:right;
+}
+.selJobLine {
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/jobleftbg.gif);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.jobsearch_l
+{
+	float:left;
+	width:248px;
+}
+.bbsbtlist
+{
+width:228px;
+font-size:12px;
+color:#666666;
+}
+.bbsbtlist_bottom
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c3c3c3;
+}
+.bbsbtlist .gray { background-color: #f2f2f2; }
+/**/
+.pot
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/pot.gif);
+	background-repeat: repeat-x;
+	height:5px;
+	width:800px;
+	margin-top:5px;
+	padding-bottom:5px;
+}
+.pot1
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/pot.gif);
+	background-repeat: repeat-x;
+	height:5px;
+	width:500px;
+	margin-top:5px;
+	padding-bottom:5px;
+}
+
+.pot2
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/pot.gif);
+	background-repeat: repeat-x;
+	height:5px;
+	width:580px;
+	margin-left:18px;
+}
+
+.pot3
+{
+	/*background-image: url(http://img01.51jobcdn.com/im/2009/pot.gif)*/;
+	background-repeat: repeat-x;
+	height:5px;
+	width:580px;
+	margin-left:18px;
+}
+
+.arrowshow
+{
+clear:both;
+position:relative;
+margin-left:18px;
+}
+.s_search
+{
+width:964px;
+padding-bottom:10px;
+}
+.ss_text
+{
+width:952px;
+background-color:#FFFFFF;
+margin-left:5px;
+}
+
+
+.insearch2 , .insearch3 , .insearch4, .insearch5 {
+	font:"宋体";
+	font-size:12px;
+	color:#333333;
+	margin-left:6px;
+	background-color:#FFFFFF;
+	padding-left:6px;
+	padding-top:10px;
+	float:left;
+}
+.insearch2 ul , .insearch3 ul , .insearch4 ul , .insearch5 ul{ height:27px; }
+.insearch2 li , .insearch3 li , .insearch4 li , .insearch5 li{ float:left; }
+.insearch2 p , .insearch3 p , .insearch4 p, .insearch5 p {
+	float:left; padding-right:3px; margin-top:-7px; *margin-top:-9px; _margin-top:-8px;
+}
+
+.insearch2 { width:850px; }
+.insearch3 { width:540px; }
+.insearch4 { width:260px; }
+.insearch5 { width:620px; }
+.insearch2 ul { width:700px; }
+.insearch3 ul { width:300px; }
+.insearch4 ul { width:210px; }
+.insearch5 ul { width:600px; }
+.search_map .insearch5 , .search_map .insearch5 p, .search_map .insearch5 ul {  margin-left: 0px;  }
+
+.search3 , .search8  , .search9 { 	height: 20px; line-height: 20px; }
+.search8 , .search9 {
+	border: 1px solid rgb( 165 , 165 , 167 );
+
+	background-image:  url( http://img01.51jobcdn.com/im/2009/searchbg.gif );
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	background-color: #ffffff;
+	background-position: 5px center;
+	padding-top: 5px;
+	padding-left: 22px;
+}
+.search3 { width: 330px; }
+.search8 { width: 225px; }
+.search9 { width: 500px; }
+.zz_search10 { width: 438px; }
+
+.map_tr1 td { vertical-align: bottom; padding-bottom1: 10px; border1: 1px solid red; }
+.fullMap { text-align: center; margin-bottom: 15px; }
+
+.searchan
+{
+padding-top: 6px;
+}
+.keyblue
+{
+color:#0265c2;
+}
+.keyname
+{
+padding-top: 6px;
+}
+.close_s
+{
+position:relative;
+padding-left:15px;
+padding-top:4px;
+}
+
+.close_s img { cursor:pointer; }
+.close_s1
+{
+padding-top:4px;
+}
+.close_s1 img {
+cursor:pointer;
+margin-left:13px;
+_margin-left:18px;}
+.insearch2_right
+{
+float:left;
+}
+.q {
+	text-align:right;
+	padding-top:4px;
+	padding-right:6px;
+}
+.adviceHelp { text-align:right; padding-top:4px; padding-right:6px; }
+/*左右结构*/
+.search_left,.search_right { float:left; }
+.search_left
+{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #c3c3c3;
+	width:165px;
+}
+.search_right {
+	margin-left:10px;
+	width:788px;
+	border1:1px solid red;
+}
+.search_right_top
+{
+padding-top:10px;
+}
+.btclass
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/c/zhjlr.gif);
+	height:29px;
+	font-size: 14px;
+	background-repeat: no-repeat;
+	font-family: "宋体";
+	font-weight: bold;
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-left: 2px;
+	margin-left:10px;
+}
+.txt_sp
+{
+	padding-bottom: 6px;
+	padding-left: 10px;
+}
+.hotJobidBg {
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/hotJobidBg.gif);
+	height:22px;
+	line-height:22px;
+}
+.bline_search
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c3c3c3;
+	padding-bottom:4px;
+	margin-bottom:5px;
+	font:"宋体";
+	font-size:12px;
+
+}
+.zjjzss_kb { padding-top:2px; }
+.bt_re
+{
+	color:#6c6c6c;
+	text-align:center;
+	font-weight: bold;
+	background-color: #f7f7f7;
+	line-height:20px;
+}
+.bt_pc
+{
+	text-align:center;
+}
+.bt_pc1
+{
+	color:#6c6c6c;
+	line-height:30px;
+	text-align:center;
+}
+.bt_pc1 input { color: #c4c4c4; }
+.bt_center
+{
+color:#072d42;
+font:"宋体";
+font-size:12px;
+}
+.page
+{
+margin-left:172px;
+}
+.page1
+{
+font-size:16px;
+margin-left:170px;
+}
+/*地图搜索*/
+.searchmap
+{
+margin: 0 auto;
+width:835px;
+padding-top:20px;
+padding-bottom:20px;
+}
+.search_map
+{
+	margin-left:6px;
+	width:820px;
+	/*height:380px;
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/dqbg.gif);*/
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #FFFFFF;
+}
+.search_map .left28px , .search_map .left14px { margin-left: 28px; }
+* html .search_map .left14px { margin-left: 14px; }
+.search_map .mapPriv { float: left; }
+.mapfont
+{
+font-family:"宋体";
+font-size:12px;
+color:#333333;
+}
+.btmap
+{
+margin:15px;
+}
+.maparea
+{
+	color:#ff7300;
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-left: 28px;
+}
+.maparea1
+{
+	margin-top: 10px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-left: 28px;
+	line-height: 1.5em;
+}
+.maparea1 a { margin-left: 15px; }
+/*地区选择*/
+.areasele1_e
+{
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	width: 1000px;
+	margin-top:10px;
+	padding-bottom:10px;
+}
+.areasele1_c
+{
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	width: 860px;
+	margin-top:10px;
+	padding-bottom:10px;
+}
+.areasele_c { height: 540px; background-image: url(http://img01.51jobcdn.com/im/2009/search/c/areaselebg.gif); }
+.areasele_e { height: 540px; background-image: url(http://img01.51jobcdn.com/im/2009/search/e/areaselebg.gif); }
+.mapfont1
+{
+font-family:"宋体";
+font-size:12px;
+color:#333333;
+line-height:20px;
+}
+.s_bt
+{
+	font-family:"宋体";
+	font-size:14px;
+	color:#333333;
+	font-weight:bold;
+	padding-top: 23px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+	padding-left: 35px;
+}
+/*搜索*/
+.ins_left,.ins_right
+{
+float:left;
+}
+.ins_left
+{
+	width:660px;
+	margin-left:4px;
+}
+.ins_right
+{
+	width:272px;
+	margin-left:20px;
+}
+.search_top
+{
+padding-bottom:10px;
+}
+.right_t
+{
+background:#FFFFFF;
+margin-left:6px;
+width:260px;
+height:200px;
+}
+.left_t
+{
+background:#FFFFFF;
+margin-left:6px;
+width:646px;
+}
+.labelsearch
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/area/labelbg.gif);
+	background-repeat: repeat-x;
+	height:33px;
+}
+.c_l
+{
+	padding-top:20px;
+}
+.c_l select { width: 105px; }
+.c_r
+{
+	padding-top:10px;
+}
+.search_robot
+{
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ff8a2a;
+	border-right-color: #ff8a2a;
+	border-bottom-color: #ff8a2a;
+	border-left-color: #ff8a2a;
+	background-color: #fffaf6;
+	width:380px;
+	height:32px;
+	text-align:center;
+	vertical-align: middle;
+	line-height:32px;
+	margin-bottom:5px;
+	_margin-top:-10px;
+}
+/*职位详细*/
+.bgjob
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/srbg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.bgjob1
+{
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/srbg_c.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.sr_ad
+{
+margin:0 auto;
+padding-top: 5px;
+width:1000px;
+}
+.ad_s
+{
+margin:5px;
+}
+.s_txt_jobs
+{
+margin:0 auto;
+width:750px;
+background-color:#FFFFFF;
+
+}
+.s_txt_jobs1
+{
+margin:0 auto;
+width:700px;
+background-color:#FFFFFF;
+
+}
+.jobs_1
+{
+font-size:12px;
+}
+.sr_bt
+{
+	font-size:16px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #fd5900;
+	font-weight: bold;
+	color: #0156C3;
+}
+.jobs_com
+{
+width:93%;
+padding-bottom:10px;
+margin-left:25px;
+}
+.jobs_txt
+{
+background-color:#FFFFFF;
+margin-left:6px;
+width:98%;
+font:"宋体";
+font-size:12px;
+}
+.txt_font
+{
+	line-height:20px;
+	margin:18px;
+}
+.txt_font1
+{
+	line-height:20px;
+	margin-left:18px;
+}
+.txt_1
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e3e3e3;
+	background-color: #f1f1f1;
+	padding:7px;
+}
+.txt_2
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e3e3e3;
+	background-color: #ffffff;
+	padding:7px;
+}
+.txt_3
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #fd5900;
+	margin-top:5px;
+	height:28px;
+	line-height:35px;
+}
+.txt_4 {
+	padding:7px;
+	line-height:20px;
+	width:600px;
+	margin-left:20px;
+}
+.txt_9
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E3E3E3;
+	margin-top:5px;
+	height:28px;
+	line-height:35px;
+}
+.txt
+{
+color:#364878;
+font-size:12px;
+text-align:right;
+margin-right:40px;
+}
+
+.coPerPage { color:#364878; font-weight:bold; }
+.coPerPage span , .coPerPage a { display:block; float:left; height:19px; line-height: 19px; margin-left: 7px; text-align: center; }
+.txtlab , .txtlab1 { width:20px; border: 1px solid #d7d7d7; }
+.txtlab { background-color: #eef1ea; }
+.txtlab1{ background-color: #c2e4ff; }
+
+.txt_5
+{
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #d7d7d7;
+}
+.txt_6
+{
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #fd5900;
+
+}
+.txt_7
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #fd5900;
+	background-color: #f1f1f1;
+	border-right-width: 1px;
+	border-right-style: dashed;
+	border-right-color: #999999;
+}
+/*左右*/
+.jobsearch_left,.jobsearch_right
+{
+float:left;
+}
+
+.jobsearch_left
+{
+width:216px;
+margin-right:20px;
+margin-left:40px;
+_margin-left:19px;
+margin-top:20px;
+}
+
+.txt_s
+{
+width:200px;
+background-color:#FFFFFF;
+margin-left:6px;
+}
+
+.btname1
+{
+	padding-top:6px;
+	margin-left:18px;
+	color:#ff7300;
+	font-size:14px;
+}
+/*底部的位置*/
+#bott{
+	background-image:url(http://img01.51jobcdn.com/im/2009/bottombg1.gif);
+	width:1002px;
+	height:41px;
+	background-repeat: repeat-x;
+	text-align:center;
+}
+
+/** add by liyao **/
+.qxjyxszw { text-align: center; font-weight: bold; font-size: 14px; color: #333333; height: 150px; line-height: 150px; }
+
+.zz_51color { color: #ff7400; }
+
+.funIndJobareaPare {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #FF6600;
+}
+
+.jaTpSchTbl td { text-align: left; }
+
+/*热门关键字搜索*/
+.sinTip { clear: both; margin-top: 6px; }
+.sinTip span { float: left; height:20px; line-height:20px; }
+.sinTip ul { float: left; width: auto; color:#0265c2; }
+.sinTip ul li { float: left; width: auto; height: auto; height: 20px; line-height: 20px; white-space:nowrap;}
+.sinTip ul li a { margin:0 3px; }
+.sinTip .sinTipTxt { height: auto; }
+.sinTip .sinTipTxt1 { height: 20px; overflow:hidden;  }
+
+/*在结果中筛选*/
+.refineNavOn , .refineNavOff{
+	font-weight: bold;
+	color: #ff7300;
+	cursor: pointer;
+	height: auto;
+	padding-left:16px;
+}
+.refineNavOn {
+	background: url(http://img01.51jobcdn.com/im/2009/search/arrowblack.gif) no-repeat left center;
+}
+.refineNavOff {
+	background: url(http://img01.51jobcdn.com/im/2009/search/arrowgray.gif) no-repeat left 3px;
+}
+.refineMenu{}
+.refineMenu ul { margin-left: 14px; }
+.refineMenu ul li a  {
+	display: block;
+	height: auto;
+	width: 120px;
+	border: 1px solid #ffffff;
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #8b8b8b;
+	background: url(http://img01.51jobcdn.com/im/2009/search/arrowgray.gif) no-repeat 3px center;
+}
+.refineMenu ul li .high  {
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/arrowred.gif);
+	color: #ff7300;
+}
+.refineMenu ul li a:hover  {
+	border: 1px solid #cccccc;
+	background-color: #f3f3f3;
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/arrowred.gif);
+	color: #ff7300;
+}
+
+.resultRight .resultListDiv { float: left; margin-right1: 5px; }
+.resultRight .resultTopNav { margin-top:6px; }
+.resultRight .resultNav { width: 100%; }
+.resultRight .resultNav .nav_r { text-align: right; padding-right: 0px; }
+.resultRight .resultNav .nav_r table { float:right; }
+.navBold td { color: #072D42; font-weight: bold; }
+/***********搜索结果列表 start*************/
+table { word-wrap: break-word; word-break: keep-all; }
+.wordBreakNormal { word-wrap:normal; word-break:normal; }
+.resultList {}
+
+.resultList .titleTr { background: url(http://img01.51jobcdn.com/im/2009/search/jglb_title.gif); }
+.resultList .titleTr td { border: 1px solid #e6e6e6; }
+.resultList .titleTr .td0 { border-right: 0px; }
+.resultList .titleTr .td1 { border-right: 0px; border-left: 0px; }
+.resultList .titleTr .td2 { border-right: 0px; }
+.resultList .titleTr .td3 { border-right: 0px; }
+.resultList .titleTr .td4 { border-right: 0px; }
+
+.resultList .tr0 td { padding-top: 8px; }
+.resultList .tr0 .td1 img { cursor: pointer; }
+.resultList .tr1 .td123 , .resultList .tr1 .td1234 { color: #717171;}
+.resultList .tr2 td { line-height: 18px; }
+.resultList .tr2 .td5 span{ cursor: pointer; color: #0265c2;}
+.resultList .tr3 { background: #e6e6e6;}
+.resultList .tr3 td { height: 1px; }
+
+.resultList td { height: 22px; padding-left: 10px; }
+.resultList .td0 { width: 15px; padding-left: 2px; }
+.resultList .td3 { width: 90px; }
+.resultList .td4 { width: 90px; }
+.resultList .td5 { width: 90px; padding-left: 0px;}
+
+/*hot*/
+.resultList .hotTr .td0 { border-left: 2px solid #ffa100; }
+.resultList .hotTr .td5 { border-right: 2px solid #ffa100; }
+.resultList .hotTrLine { background: #ffa100; }
+.resultList .hotTrLine td { height: 2px; background: #ffa100; }
+.resultList .hotBtmTr * { height: 1px; background: #e6e6e6; overflow:hidden; font-size:0px; }
+.resultList .hotBtmTr .td0 { border-left: 2px solid #ffa100;  }
+.resultList .hotBtmTr .td5 { border-right: 2px solid #ffa100;  }
+
+
+/*.resultListWide*/
+.resultListWide .td1 { width: 230px; }
+.resultListWide .td2 { width: 220px; }
+.resultListWide .td1234 { width: 630px; }
+.resultListWide .td123 { width: 540px; }
+
+/*.resultListNarrow*/
+.resultListNarrow .td1 { width: 130px; }
+.resultListNarrow .td2 { width: 130px; }
+.resultListNarrow .td1234 { width: 440px; }
+.resultListNarrow .td123 { width: 350px; }
+
+/*公司职位链接样式*/
+a.jobname:link { color: #0179e7; text-decoration: none; font-size: 14px; }
+a.coname:link { color: #0179e7; text-decoration: none; }
+.jobname { font-weight:bold; }
+.jobname font { font-size: 14px; }
+a.jobname:hover , a.coname:hover { text-decoration: underline; }
+a.jobname:visited {  color: #993366; font-size: 14px; }
+a.coname:visited {  color: #993366; }
+
+/*推荐职位样式.resultListRecJobList*/
+.resultListRecJobList td { height: 17px; padding-top: 0px; }
+.resultListRecJobList .titleTr td { border: 0px; color: #ff7300; font-weight: bold;
+	background:url(http://img01.51jobcdn.com/im/2009/search/s_vline.gif);
+	height: 30px;
+}
+.resultListRecJobList a.jobname:link , .resultListRecJobList a.coname:link { color: #333333; }
+.resultListRecJobList a.jobname:hover , .resultListRecJobList a.coname:hover { color: #ff7300; }
+.resultListRecJobList .jobname { font-weight:400; }
+.resultListRecJobList .td0 { width: 0px; }
+.resultListRecJobList .td1 { width: 160px; }
+.resultListRecJobList .td2 { width: 150px; }
+.resultListRecJobList .td3 { width: 113px; color: #333333; }
+.resultListRecJobList .td4 { width: 0px; display: none; }
+.resultListRecJobList .td5 { width: 0px; display: none; }
+.recJobList0 * { background: #f3f3f3; }
+.recJobList1 * { background: #fbfbfb; }
+
+/*send_resume.php页面推荐职位*/
+.send_resume { background: #ffffff; }
+.send_resume .titleTr td { background: url(http://img01.51jobcdn.com/im/2009/search/jglb_title.gif); height:22px; }
+.send_resume .titleTr td , .send_resume .recTitleTr td { color: #323232; font-weight: bold; }
+.send_resume .titleTr td , .send_resume .titleTr .td4{ border: 1px solid #e6e6e6; }
+.send_resume .titleTr .td0 { border-right: 0px; }
+.send_resume .titleTr .td1 { border-right: 0px; border-left: 0px; }
+.send_resume .titleTr .td2 { border-right: 0px; }
+.send_resume .titleTr .td3 { border-right: 0px; }
+.send_resume .td0 { width: 15px; padding-left: 2px; }
+.send_resume .td1 { width: 260px; }
+.send_resume .td2 { width: 230px; }
+.send_resume .td4 { width: 80px; display: table-cell; *display: block; }
+.send_resume .btmXuxian { padding-top:3px;padding-left:0px;height:5px; }
+.send_resume .btmXuxian div { width:100%;border-top:1px dotted #000000;height:3px;over-flow:hidden; }
+
+/***********搜索结果列表 end*******************/
+
+
+.search_btm0 { padding-bottom: 0px; }
+/*搜索条件描述*/
+.condDesc {
+	width: 950px;
+	white-space: nowrap;
+	overflow: hidden;
+/*	height: 27px;*/
+	line-height: 27px;
+	padding-left: 15px;
+	/*background-image: url(http://img01.51jobcdn.com/im/2009/search/tjms_bg.gif);*/
+	background-repeat: repeat-x;
+}
+.districtDesc {
+	width: 950px;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 27px;
+	padding-left: 15px;
+	background-repeat: repeat-x;
+}
+/*分区选择*/
+.districtNav { /*background-image: url(http://img01.51jobcdn.com/im/2009/search/tjms_bg.gif);*/ }
+.districtNav a {
+	font-size: 12px;
+	color: #266EBA;
+	text-decoration: underline
+}
+.districtNav a:hover {
+	font-size: 12px;
+	color: #ff7300;
+	text-decoration: none;
+}
+
+/*地标地铁背景*/
+.dibiao_line {
+	background: url(http://img01.51jobcdn.com/im/2009/search/bg.gif) bottom repeat-x;
+	width: 970px;
+	margin-left: 15px;
+}
+
+/*地标地铁需要折行*/
+.dibiaoDesc {
+	width: 950px;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 27px;
+	padding-left: 15px;
+	background-repeat: repeat-x;
+}
+
+.LineStop {
+	width: 880px;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 27px;
+	margin-left: 80px;
+	background-repeat: repeat-x;
+	border: 1px #000000 solid;
+}
+
+/******************* 关键字广告样式 start ***********************/
+.kwdAdDiv {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	display:block;
+	overflow-x: hidden;
+	padding-left:5px;
+}
+.kwdAdTbl {
+	text-align: left;
+	border: 0;
+	margin: 0;
+	border-collapse: collapse;
+	border-left: 1px #cccccc solid;
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+
+.kwdAdTbl td {
+	padding: 0;
+	padding-left: 10px;
+}
+
+.kwdAdTbl a:link , .kwdAdTbl a:visited , .kwdAdTbl a:active {
+	text-decoration: none;
+}
+.kwdAdTbl a:hover {
+	text-decoration: underline;
+}
+
+.kwdAdTbl img {
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	border: 0px;
+}
+
+.kwdAdBoldLink a:link , .kwdAdBoldLink a:visited , .kwdAdBoldLink a:active {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #454545;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.kwdAdBoldLink a:hover {
+	color: #ff7300;
+}
+
+.kwdAdFineLink , .kwdAdFineLink a:link , .kwdAdFineLink a:visited , .kwdAdFineLink a:active {
+	font-family: "宋体";
+	font-size: 12px;
+	color: black;
+	line-height: normal;
+	font-weight: normal;
+	width:159px;
+}
+
+.kwdAdFineLink {
+	color: #949494;
+}
+
+.kwdAdFineLink a:link , .kwdAdFineLink a:visited , .kwdAdFineLink a:active {
+	color: #000000;
+}
+
+.kwdAdBlueLink a:link , .kwdAdBlueLink a:visited , .kwdAdBlueLink a:active {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #0059E1;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.kwdAdBlueLink , .kwdAdBoldLink , .kwdAdFineLink {
+	height: 20px;
+}
+
+.kwdAd_g_line1{
+    background:#cccccc;
+	height:1px;
+}
+
+.kwdAd_g_line2{
+	height: 30px;
+}
+
+.kwdAdImgHeight {
+	height: 60px;
+}
+/******************* 关键字广告样式 end   ***********************/
+
+.kwdBold { font-weight: bold; font-size: 14px; }
+
+
+.relatedArea td { height: 25px; padding-left: 5px; }
+.relatedArea .relTitle { width:70px; padding-left: 5px; font-size: 14px; font-weight: bold; color: #6c6c6c }
+
+/*相关搜索*/
+.relatedSearch td { width: 114px; }
+.relatedSearch a:link { color: #0166c0; text-decoration: none; }
+.relatedSearch a:visited { color: #993366; text-decoration: none; }
+.relatedSearch a:hover { color: #0166c0; text-decoration: underline; }
+
+/*地区频道*/
+.areaChannel a:link { color: #a5a5a5; text-decoration: none; }
+.areaChannel a:visited { color: #993366; text-decoration: none; }
+.areaChannel a:hover { color: #a5a5a5; text-decoration: underline; }
+
+/*地标选择部分样式 start*/
+.dibiao_tbl  {
+	height: 30px;
+	width: 180px;
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/c/dbbg.gif);
+}
+.dibiao_tbl td {
+
+}
+.dibiao_tbl .td0 {
+	width: 126px;
+}
+.dibiao_tbl input {
+	padding-top: 5px;
+	margin-left: 3px;
+	height: 18px;
+	width: 96%;
+	border: 0px;
+	background-color: #f9f9f9;
+}
+#dibiao_td {
+	border0: 1px solid red;
+}
+
+/*城市加new*/
+.mapPriv img {
+	position:absolute;
+	margin-top:-8px;
+}
+
+.dibiaoLayer table {
+	border : 1px solid #a6a6a8;
+	width: 550px;
+}
+.dibiaoLayer table td { padding-left: 3px; padding-right: 3px; height: 22px; }
+.ditieLayer table {
+	border : 1px solid #a6a6a8;
+	width: 550px;
+}
+.ditieLayer table td { padding-left: 3px; padding-right: 3px; height: 22px; }
+/*地标选择部分样式 end */
+
+/*职位备注以及意见反馈弹层 start*/
+.window03{
+	width:280px;
+	margin:0px;
+	padding:0px;
+	background:url(http://img01.51jobcdn.com/im/2009/search/gray_bg01.gif) repeat-x;
+	-height:1%;
+	overflow:hidden;
+	border:#82868D solid 1px;
+	font-size:12px;
+}
+/* 百度地图 */
+.showMapLayer{
+	width:740px;
+	margin:0px;
+	padding:0px;
+	background:url(http://img01.51jobcdn.com/im/2009/search/gray_bg01.gif) repeat-x;
+	-height:1%;
+	overflow:hidden;
+	border:#c6c6c4 solid 1px;
+	font-size:12px;
+}
+.showMapLayer_title{background:url(http://img01.51jobcdn.com/im/2009/search/baidumap/title_bg.png) repeat-x;height:34px;color:#FF5F00;font-size:16px;	font-weight:bold;padding-left:10px;line-height:34px; border-bottom:#d0d0d0 solid 1px;}
+.showMapLayer_title_info{color:#d66c16;font-size:16px;width:600px;font-weight:bold;float:left;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}/* 加入了超过长度变为省略号*/
+.showMapLayer_title_close{float: right;padding: 5px;margin: 0px 5px 0 90px;cursor: pointer;}
+
+.adviceLayer { width:330px; background:url(http://img01.51jobcdn.com/im/2009/search/gray_bg02.gif) repeat-x;}
+.adviceLayer .window_close02{ margin-left:230px; }
+.adviceLayer .window_con04{ width:316px; line-height: 25px; }
+.adviceLayer .adviceTitle{ color:#FF5F00; }
+.adviceLayer .win_input{ width:270px; }
+.adviceLayer .window_like02{ margin-top:15px; }
+
+.window_title{
+	background:url(http://img01.51jobcdn.com/im/2009/search/window_title_bg.gif) repeat-x;
+	height:28px;
+	color:#FF5F00;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:10px;
+	line-height:28px;
+}
+.window_close02{ margin-left:110px; }
+.window_con04{
+	width:266px;
+	margin:0 auto 7px;
+	padding:0px;
+}
+.window_con_bg02{
+	padding:10px;
+	margin:0px;
+	text-align:left;
+}
+.window_like01{
+	margin:3px 0;
+	text-align:left;
+	width:100%;
+}
+.win_lab02{
+	border:#417D99 solid 1px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	background:#417D99;
+	margin:0px 3px;
+	color:#FFFFFF;
+	width:53px;
+}
+.win_lab01{
+	border:#417D99 solid 1px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	background:#C2DFEF;
+	margin:0px 3px;
+	width:53px;
+}
+.win_input{
+	border:#417D99 solid 1px;
+	width:163px;
+	padding:3px;
+	vertical-align:top;
+	margin:0 0 0 3px;
+	font-size:12px;
+}
+.window_like02 img , .window_like02 input{
+	margin:0 0 0 63px;
+}
+/*职位备注弹层 end*/
+
+/*最近使用的搜索器以及一线城市热门搜索组合 start */
+.recentSearch ul , .hotSearch ul { padding-top: 5px; }
+.recentSearch ul li , .hotSearch ul li {
+	/*height:25px;*/
+	line-height:20px;
+}
+
+.recentSearch
+{
+height: 110px;
+*height:115px;
+_height:116px;
+}
+.recentSearch ul { 	margin-left: 22px; }
+.recentSearch ul li {
+	list-style-image:url(http://img01.51jobcdn.com/jobsearch/images/apoint_org2.gif);
+}
+
+.hotSearch { height: auto; }
+.hotSearch ul { margin-left: 6px; }
+.hotSearch ul .rmsscs {
+	padding-left:20px;
+	font-weight:bold;
+	background:url(http://img01.51jobcdn.com/im/2009/search/rmsscs_bg.gif);
+	height: 28px;
+}
+.hotSearch ul li {
+}
+
+/*最近使用的搜索器以及一线城市热门搜索组合 end */
+
+.typeSearch a:link , .typeSearch a:visited { color:#333333; }
+.typeSearch a:hover { color:#ff7300; }
+.typeSearch .tsGray { color:#333333; }
+
+.zwms_lxfs {
+	background:url(http://img01.51jobcdn.com/im/2009/search/zwms_lxfs.gif) repeat-x;
+	height:28px;
+	font-weight: bold;
+	padding-left: 8px;
+	line-height:28px;
+}
+
+.coTitle {
+
+}
+
+.no_border { border:0px; }
+
+table.tbl{text-align:left;border:0;margin:0;border-collapse:collapse;}
+table.tbl td{padding:0;}
+
+.searchNav { float: left; }
+.searchNav td { text-align:center; }
+
+/**公司所有职位 begin **/
+.coJobList { width:90%; margin: auto; }
+.coJobList tr { height: 25px;  }
+.coJobList .td0 { width:220px; padding-left: 10px; }
+.coJobList .td1 { width: 120px; text-align:center; }
+.coJobList .td2 { width: 90px; text-align:center; }
+.coJobList .td3 { width: 90px; text-align:center; }
+.coJobList .td4 { width: 100px; text-align:center; }
+/**公司所有职位 end **/
+
+/*分页 start*/
+.searchPageNav { height: 28px; }
+.searchPageNav .currPage  { padding-left: 5px; padding-right: 5px; text-align:center; }
+.searchPageNav a { display:block; width: 15px; border:1px solid #ffffff; text-align:center; }
+.searchPageNav a:link {}
+.searchPageNav a:visited {}
+.searchPageNav a:hover { border-color:#d7d7d7; text-decoration:none; background-color: #eef1ea; }
+/*分页 end*/
+
+/*高级搜索首页 start*/
+.condSelTbl { width: 100%; }
+.condSelTbl tr { height: 35px; }
+.sslsLeft {background-color:#F3F2F2;float:left;line-height:20px;color:#FF7300;font-weight:bold}
+.sslsRight {float:left;background-color:#F3F2F2;line-height:20px;height:40px;}
+.sslsRight li {color:#266EBA;padding-left:15px;width:170px}
+.rmssLi {display:block;padding-right:5px;padding-left:3px;}
+/*高级搜索首页 end*/
+
+.quName { width: 150px; }
+a.orange1:visited {	text-decoration: underline; }
+a.orange1:hover {	text-decoration: none; }
+
+/*小Q提示*/
+.xqts { float:right; margin-top:7px; color:#545454; }
+
+/*特殊*/
+.redbotts
+{
+  background-image: url(http://img01.51jobcdn.com/im/2009/search/redbbg.gif);
+  background-repeat: repeat-x;
+  height: 14px;
+  }
+
+/*查看大图周边查询*/
+H2.h2Title {
+	FONT-SIZE: 12px; BACKGROUND: url(http://img01.51jobcdn.com/im/2009/search/mapbar/bg_text.gif) red repeat-x 0px 100%; TEXT-INDENT: 0.8em; LINE-HEIGHT: 28px; HEIGHT: 28px
+}
+.searchBox02 {
+	MARGIN-RIGHT: 1px; _margin-left: 1px
+}
+.busSearch {
+	BORDER-RIGHT: #fed37f 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #fed37f 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; MARGIN: 1px 0px 5px; BORDER-LEFT: #fed37f 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #fed37f 1px solid; HEIGHT: auto
+}
+.driveSearch {
+	BORDER-RIGHT: #fed37f 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #fed37f 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; MARGIN: 1px 0px 5px; BORDER-LEFT: #fed37f 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #fed37f 1px solid; HEIGHT: auto
+}
+.searchBox02 H4 {
+	BORDER-RIGHT: #fed37f 1px solid; BORDER-TOP: #fed37f 1px solid; FONT-SIZE: 12px; BACKGROUND: no-repeat 95% 50%; BORDER-LEFT: #fed37f 1px solid; CURSOR: pointer; TEXT-INDENT: 0.8em; LINE-HEIGHT: 25px; BORDER-BOTTOM: #fed37f 1px solid; HEIGHT: 25px
+}
+.aroundA {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 12px; PADDING-BOTTOM: 15px; OVERFLOW: hidden; PADDING-TOP: 10px; _padding-bottom: 30px
+}
+.aroundA A {
+	DISPLAY: inline; FLOAT: left; MARGIN: 0px 13px; COLOR: #f60; LINE-HEIGHT: 1.8em; _line-height: 1.2em
+}
+.LMBox {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; FLOAT: left; BORDER-LEFT: #ccc 1px solid; WIDTH: 8px; CURSOR: pointer; BORDER-BOTTOM: #ccc 1px solid; HEIGHT: 320px; vertical-align: middle;padding-top: 250px;
+}
+.ol001 {
+	PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px dashed; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 0.3em auto; OVERFLOW: auto; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px dashed; text-align: left;
+}
+.ol001 LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: outside; PADDING-BOTTOM: 5px; MARGIN-LEFT: 22px; LINE-HEIGHT: 1.5em; PADDING-TOP: 5px; BORDER-BOTTOM: #eee 1px solid; LIST-STYLE-TYPE: decimal;
+	text-align: left;
+}
+.ol001 OL.ol01 LI A {
+	COLOR: #333; TEXT-DECORATION: none
+}
+.ol001 OL.ol01 LI A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+P.pBBut {
+	BORDER-TOP: #fed37f 1px solid; MARGIN-TOP: 5px; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.pointChoice {
+	WIDTH: auto; PADDING-TOP: 5px; HEIGHT: auto; TEXT-ALIGN: center
+}
+.pointChoice .select01 {
+	MARGIN: 0px auto; WIDTH: 90%
+}
+.pointChoice TABLE {
+	WIDTH: 95%
+}
+.pointChoice TABLE TH {
+	TEXT-INDENT: 1em; LINE-HEIGHT: 23px; HEIGHT: 23px; TEXT-ALIGN: left
+}
+.driveResult {
+	PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px dashed; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 0.3em auto; OVERFLOW: auto; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px dashed; HEIGHT: 490px
+}
+.driveResult LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: outside; PADDING-BOTTOM: 5px; MARGIN-LEFT: 22px; LINE-HEIGHT: 1.5em; PADDING-TOP: 5px; BORDER-BOTTOM: #eee 1px solid; LIST-STYLE-TYPE: decimal;
+	text-align: left;
+}
+.driveResult OL.ol01 LI A {
+	COLOR: #333; TEXT-DECORATION: none
+}
+.driveResult OL.ol01 LI A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+
+#RBox001 a {
+	COLOR: #0000CC;
+	TEXT-DECORATION: underline
+}
+
+#mybubble_Title_TitleTd {
+	word-break: break-all;
+}
+
+/*职位描述*/
+.job_detail{
+background: #ffffff;
+margin: 0px;
+padding: 2px 5px 2px 0px;
+font-size: 12px;
+overflow: auto;
+scrollbar-face-color: #fff;
+scrollbar-highlight-color: #c1c1bb;
+scrollbar-shadow-color: #c1c1bb;
+scrollbar-3dlight-color: #ebebe4;
+scrollbar-arrow-color: #cacab7;
+scrollbar-track-color: #f4f4f0;
+scrollbar-darkshadow-color: #ebebe4;
+word-wrap: break-word;
+font-family: '宋体', 'Courier New';
+}
+.job_detail p{line-height:1.5;}
+.job_detail ul{list-style-position:outside;margin-left:28px;*margin-left:24px;_margin-left:24px;}
+.job_detail ol{margin-top: 2px;margin-bottom:2px;}
+.job_detail div,.w span{line-height:1.5;}
+.job_detail li{margin:5px;}
+.job_detail ul li{list-style-type:disc;line-height:1.5;}
+.job_detail ol li{list-style-type:decimal;line-height:1.5;}
+#map_partall{width:158px;height:255px;padding:8px; padding-right:0px;margin-left:3px;background:url(http://img01.51jobcdn.com/im/2009/search/c/map_partbg.gif) no-repeat;font-size:12px;font-family:arial,"宋体";}
+#map_partall img{vertical-align:middle;}
+#map_partall ul{list-style:none;padding:0;margin:0}
+#map_partall ul li{margin:6px 0;}
+.r{text-align:right;padding-right:10px;}
+.map_input1{width:86px;height:21px;}
+.map_input2{width:60px;height:16px;border:1px solid #cecece;margin-left:2px;background:url(http://img01.51jobcdn.com/im/2009/search/c/search_ico.gif) no-repeat;padding-left:20px;}
+.selebg3
+{
+  border-right: #ffffff 0px solid;
+  border-top: #ffffff 0px solid;
+  border-left: #ffffff 0px solid;
+  border-bottom: #ffffff 0px solid;
+  color: #333333;
+  background-image: url(http://img01.51jobcdn.com/im/2009/search/c/tmp3.gif);
+  background-color: #e7e7e7;
+  font-size: 12px;
+  font-family: "宋体", arial, verdana,helvetica, sans-serif;
+  height: 21px;
+  width: 86px;
+  margin-top:5px;
+}
+.selebg4
+{
+  border-right: #ffffff 0px solid;
+  border-top: #ffffff 0px solid;
+  border-left: #ffffff 0px solid;
+  border-bottom: #ffffff 0px solid;
+  color: #333333;
+  background-image: url(http://img01.51jobcdn.com/im/2009/search/c/tmp1.gif);
+  background-color: #e7e7e7;
+  font-size: 12px;
+  font-family: "宋体", arial, verdana,helvetica, sans-serif;
+  height: 21px;
+  width: 86px;
+  margin-top:5px;
+}
+
+.dibiao_tbl2  {
+	height: 21px;
+	width: 71px;
+	background-image: url(http://img01.51jobcdn.com/im/2009/search/c/tmp2.gif);
+}
+
+.dibiao_tbl2 .td0 {
+	width: 60px;
+	font-size: 10px;
+}
+.dibiao_tbl2 .td1 {
+	width: 26px;
+	font-size: 10px;
+}
+.dibiao_tbl2 input {
+	margin-left: 3px;
+	margin-top: 2px;
+	height: 15px;
+	width: 100%;
+	border: 0px;
+	background-color: #f9f9f9;
+}
+.info{line-height:20px;font-size:12px;font-family:Arial;color:#5d5d5d;}
+.orgbold{color:#fe7d00;font-weight:bold;}
+.logoimg{float:left;margin:0px 10px 10px 0px;padding:6px 0 4px 0;}
+.textindent{text-indent:5px;}
+.borright{border-right:1px dashed #9c9a9d;}
+.fontblue{color:#2a70b8;}
+.borbottom{border-bottom:1px solid #d7d7d7;}
+.sampleinfo{width:304px;border:1px solid #fe0000;}
+.ptitle{height:28px;padding:0 10px;font-size:14px;font-weight:bold;background:url(http://img01.51jobcdn.com/im/2009/search/mapbar/linebg.gif) repeat-x;line-height:28px;}
+.pcont{margin:5px 10px;line-height:20px;font-size:12px;}
+a.mapurlfont:visited {	text-decoration: underline; }
+a.mapurlfont:hover {	text-decoration: none; }
+.window02{
+	width:526px;
+	margin:0px;
+	padding:0px;
+	background:url(http://img01.51jobcdn.com/im/2009/cv/gray_bg02.gif) repeat-x;
+	-height:1%;
+	overflow:hidden;
+	border:#82868D solid 1px;
+}
+.window_close{   /*中英文不同  e386 c350*/
+	margin:0px 5px 0 386px;
+}
+.window_con03{
+	width:511px;
+	margin:0 auto 7px;
+	padding:0px;
+}
+.window_con_bg02{
+	padding:10px;
+	margin:0px;
+	text-align:center;
+}
+.height15{
+	height:15px;
+}
+.weight220{
+	width:220px;
+}
+.line_height20{
+	line-height:20px;
+}
+.height5{
+	height:5px;
+}
+.window_con_bg02{
+	padding:10px;
+	margin:0px;
+	text-align:center;
+}
+a.duckblue:link {
+    color: #3366CC;
+    font-size: 12px;
+    text-decoration: none;
+}
+a.duckblue:visited {
+  font-size: 12px;
+  color: #3366CC;
+  text-decoration: none;
+}
+a.duckblue:hover {
+    color: #3366CC;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.TabContent{
+	font-size:12px;
+	width:74px;
+	padding:0px;
+	border-right:1px #dcdcdc solid;border-left:1px #dcdcdc solid;
+	position:absolute;
+}
+.TabContent ul{
+	width:72px;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	border-left:1px solid #407ca1;
+	border-right:1px solid #407ca1;
+	border-bottom:1px solid #407ca1;
+}
+.TabContent ul li{
+	display:block;
+	background-image:url(http://img01.51jobcdn.com/im/2009/search/bj.gif);
+	background-repeat:repeat-x;
+	height:20px;
+	width:72px;
+	text-align:center;
+	line-height:20px;
+
+}
+.TabContent ul li a:link ,.TabContent ul li a:visited ,.TabContent ul li a:hover{
+	text-decoration:none;
+	color:#407ca1;
+}
+
+.sortByFloatMarginLeft{
+	float:left;
+	margin-left:5px;
+}
+.sfrqGrayBg{
+	width:74px;
+	height:22px;
+	background:url(http://img01.51jobcdn.com/im/2009/search/gray.gif) no-repeat;
+	cursor:pointer;
+	line-height:22px;
+}
+.srrqwenzispan{
+	margin-left:3px;
+	margin-top:1px;
+	font-size:13px;
+	color:#999999;
+}
+
+/*add by limingzhan 20120524   职位页面举报功能*/
+#operate{ width:600px; height:30px;margin-left:21px;}
+#operate ul{ list-style:none; margin:0px; padding:0px;}
+#operate ul li{ display:block;display:inline;margin-right:20px;}
+#operate ul li a{ font-size:12px; text-decoration:none; color:#333;}
+#operate ul li a:hover{ color:#ff7300;}
+/*过期职位热门职位推荐*/
+.hot_td {font-size:14px;font-weight:bold;}
+.hot_title {padding-left:10px;background:#FF7300;color:#FFFFFF;font-size:14px;font-weight:bold;height:24px;line-height:20px;}
+.hot_link_search {text-align: center; font-weight: bold; font-size: 14px; color: #333333; height: 150px; line-height: 150px; }
+
+.fan-icon { position:relative;}
+.icon-fans { display:block;width:30px; height:24px; position:absolute; top:-12px; right:-8px}
+.defult { background:url(http://img01.51jobcdn.com/im/2012/nav_interviews/fans-pop.gif); }
+
+/*基础职位*/
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+.fl { float:left}
+
+.tag { display:inline-block; height:20px; line-height:20px; border:1px solid #c2c2c2; padding:0 10px; vertical-align:middle;}
+.tag:hover { color:#F30}
+.icon-head { display:inline-block; background:url(http://img01.51jobcdn.com/im/2009/cv/icon-head.gif); width:19px; height:22px; vertical-align:middle; margin-left:-1px}
+.row { margin:10px 0; margin-bottom:0}
+.r-list li { float:left; margin-right:10px; cursor:pointer; margin-bottom:4px; display:inline}
+.r-list .ative { cursor: auto}
+.ative .icon-head {background:url(http://img01.51jobcdn.com/im/2009/cv/icon-head-ative.gif);}
+.ative .tag { background:#e5e5e5; border:1px solid #b3b3b3; color:#a0a0a0;}
+.selected .icon-head {background:url(http://img01.51jobcdn.com/im/2009/cv/icon-head-selected.gif)}
+.selected .tag { background:#fd9300; border:1px solid #e68401; color:#fff}
+.btn-add { background:url(http://img01.51jobcdn.com/im/2009/cv/btn-add.gif); width:76px; height:18px; border:none; vertical-align:middle; margin-left:4px; cursor:pointer}
+.r-title { margin-right:4px; width:80px; text-align:right; color:#999}
+.tips { color:#999}
+.require { color:#F00}
+.form-col-1 { width:80px; display:inline-block; text-align:right}
+.vl { vertical-align:middle; margin:2px}
+.btb { border-bottom:dashed 1px #ccc; border-top:1px dashed #ccc; padding:10px 0}
+.f-col-6 { width:50%;*width:52%}
+.red { color:red}
+.alert { padding:0 10px; margin-left:74px}
+
+.jobdetail_xsfw_color{color:#ed5003;font-weight:bold;}
+
+
+.grayline .Welfare_label{ height:22px; line-height:22px; background-color:#ffdfc1; padding:0px 6px; border:#f0f0f0 1px solid; display:inline-block; color:#5a5a5a;
+	margin-bottom: 5px;
+	-webkit-box-shadow: #b8b8b8 1px 1px 1px;
+	-moz-box-shadow: #b8b8b8 1px 1px 1px;
+	box-shadow: #b8b8b8 1px 1px 1px; behavior: url(/PIE.htc);}
+.grayline .position_label{ color:#0156c3; line-height:26px;}
+.Welfare_label {margin-right:6px;}
+.divClearBoth{claer: both;}
+.jobdetail_divLeft_70{float: left; width: 70px;}
+.jobdetail_divRight_span{float: left; margin-top: -4px;width:590px; padding-left:0px; }
+.jobdetai_phoneImg{margin-bottom: -5px;}
+/**/
+
+.showMapIframe{ padding:5px; height:320px; width:730px; background-color:#FFF;}
+.showMapIframe iframe{ width:100%; height:100%;}
+
+/*基层职位中海报层，公司图片层样式*/
+.jobs_txt .img_show{ clear:both; zoom:1; content: ""; display: table; margin:14px;}
+.jobs_txt .img_show li{ float:left; width:130px; height:130px; border:#CCC 2px solid; margin:0px 14px; _display:inline;}
+
+.imgbg_layer{ background-color:#000; position:fixed; width:100%; height:100%; top:0px; left:0; z-index:999990; display:none;
+filter:alpha(opacity=80);
+-moz-opacity:0.8;
+opacity:0.8;
+_position:absolute;
+}
+.img_popup{ width:1000px; height:660px;z-index:999991; display:none; position:absolute;
+}
+.img_show{ position:relative;}
+.windowPic_regional{  background:url(http://img02.51jobcdn.com/im/2009/search/pattern.gif) repeat; _height:500px;}
+.showimg_big{ width:710px; height:500px; margin:10px auto 0; padding:20px; text-align:center; background-color:#121212;}
+
+.posterContent{float:left;width:700px;height:500px;overflow: hidden;}
+.scrollBar{float:right;width:5px;height:500px;background-color:#000;display:none;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+}
+.scrollBarIndex{background-color:#F90;height:50px;}
+
+
+.showimg_big img{ vertical-align:middle;max-width:700px;width:expression(this.width > 700 ? 700: true);height:auto;}
+.imgListBox{ padding:10px 0px;}
+.showimg_list{ width:700px; margin:10px auto;}
+.showimg_list li{ float:left; margin-right:27px; border:#CCC 2px solid; height:130px; width:130px; text-align:center;}
+.showimg_list .active{border:#F63 2px solid;}
+.icon_but{ background-image:url(http://img04.51jobcdn.com/im/2009/search/company.gif); display:inline-block; position:absolute; z-index:122px; top:260px;}
+.icon_but_left { background-position:0px 0px; width:19px; height:32px; left:30px;}
+.icon_but_right{ background-position:0px -32px; width:19px; height:32px; right:30px;}
+.icon_but_close{  background-image:url(http://img03.51jobcdn.com/im/2009/search/company_cloase.gif); width:64px; height:64px; top:0px; right:0px; _right:-64px;
+}
+
+#closeIn{ position:fixed; _position:absolute;}
