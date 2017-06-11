@@ -6,7 +6,7 @@ Created on Fri May 26 12:10:42 2017
 """
 # http://www.cnblogs.com/Beyond-Ricky/p/6771028.html
 
-
+# http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%e5%85%a8%e5%9b%bd&kw=%e6%95%b0%e6%8d%ae%e6%8c%96%e6%8e%98&sm=0&isadv=0&sg=93ae47a64c624f72bef585d54d221e15&p=2
 import urllib.request
 import re
 import xlwt#用来创建excel文档并写入数据

@@ -43,13 +43,13 @@ for page in range(1,91):
 
 fo = open('java_job_zl.csv', 'w', encoding='utf-8')
 for i in range(len(l)):
-    if i%5 == 0:
+    if i % 5 == 0:
         fo.write(l[i])
         fo.write('   ')
-    if i%5 == 1:
+    if i % 5 == 1:
         fo.write(l[i])
         fo.write('   ')
-    if i%5 ==2:
+    if i % 5 == 2:
         fo.write(l[i])
         fo.write('  ')
     if i%5 ==3:
