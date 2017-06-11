@@ -1,0 +1,24 @@
+1.Line regression analyse procedure
+1.1 build model 
+data_x_train = [data1, data2,...]
+data_y_train = [data11, data21,...]
+regr = linear_model.LinearRegression()
+regr.fit(data_x_train, data_y_train)
+regr.coef_ output Coefficients
+1.2 predict 
+regr.predict(data_x_test) output predict value based on model
+np.mean((regr.predict(data_x_test)-data_y_test)**2) output residual
+
+2. Math model
+
+3. issue list
+issue description
+
+data_x_train = [71, 175, 159, 155, 152, 158, 154, 164, 168, 166, 159, 164]
+data_y_train = [57, 64, 41, 38, 35, 44, 41, 51, 57, 49, 47, 46]
+regr = linear_model.LinearRegression()
+regr.fit(data_x_train, data_y_train)
+
+warning:Found input variables with inconsistent numbers of samples: [1, 12]
+
+

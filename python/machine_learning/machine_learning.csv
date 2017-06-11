@@ -1,0 +1,766 @@
+Scikit-learn 0.18 (development)
+Scikit-learn 0.16
+PDF 文档Scikit-learn 0.17 (stable)入门指南使用手册APIFAQ贡献Scikit-learn 0.18 (development)Scikit-learn 0.16PDF 文档例子1. Supervised learning1.1. 广义线性模型
+1.1.1. 普通最小二乘法
+1.1.1.1. 普通最小二乘复杂度
+
+
+1.1.2. 岭回归
+1.1.2.1. 岭回归复杂度
+1.1.2.2. 设置正则化参数: 广义交叉验证
+
+
+1.1.3. Lasso
+1.1.3.1. 设置正则化参数
+1.1.3.1.1. 使用交叉验证
+1.1.3.1.2. 基于模型选择的信息约束
+
+
+
+
+1.1.4. 弹性网络
+1.1.5. Multi-task Lasso回归
+1.1.6. Least Angle Regression最小角回归
+1.1.7. LARS Lasso
+1.1.7.1. Mathematical formulation
+
+
+1.1.8. Orthogonal Matching Pursuit (OMP) 正交匹配跟踪
+1.1.9. 贝叶斯回归
+1.1.9.1. 贝叶斯岭回归
+1.1.9.2. Automatic Relevance Determination - ARD
+
+
+1.1.10. 逻辑回归
+1.1.11. Stochastic Gradient Descent - SGD
+1.1.12. 感知机
+1.1.13. Passive Aggressive Algorithms
+1.1.14. 鲁棒（稳健）回归：异常值和模型错误
+1.1.14.1. Different scenario and useful concepts
+1.1.14.2. RANSAC: RANdom SAmple Consensus
+1.1.14.2.1. Details of the algorithm
+
+
+1.1.14.3. Theil-Sen estimator: generalized-median-based estimator
+1.1.14.3.1. Theoretical considerations
+
+
+
+
+1.1.15. Polynomial regression: extending linear models with basis functions1.1.1. 普通最小二乘法
+1.1.1.1. 普通最小二乘复杂度1.1.1.1. 普通最小二乘复杂度1.1.2. 岭回归
+1.1.2.1. 岭回归复杂度
+1.1.2.2. 设置正则化参数: 广义交叉验证1.1.2.1. 岭回归复杂度1.1.2.2. 设置正则化参数: 广义交叉验证1.1.3. Lasso
+1.1.3.1. 设置正则化参数
+1.1.3.1.1. 使用交叉验证
+1.1.3.1.2. 基于模型选择的信息约束1.1.3.1. 设置正则化参数
+1.1.3.1.1. 使用交叉验证
+1.1.3.1.2. 基于模型选择的信息约束1.1.3.1.1. 使用交叉验证1.1.3.1.2. 基于模型选择的信息约束1.1.4. 弹性网络1.1.5. Multi-task Lasso回归1.1.6. Least Angle Regression最小角回归1.1.7. LARS Lasso
+1.1.7.1. Mathematical formulation1.1.7.1. Mathematical formulation1.1.8. Orthogonal Matching Pursuit (OMP) 正交匹配跟踪1.1.9. 贝叶斯回归
+1.1.9.1. 贝叶斯岭回归
+1.1.9.2. Automatic Relevance Determination - ARD1.1.9.1. 贝叶斯岭回归1.1.9.2. Automatic Relevance Determination - ARD1.1.10. 逻辑回归1.1.11. Stochastic Gradient Descent - SGD1.1.12. 感知机1.1.13. Passive Aggressive Algorithms1.1.14. 鲁棒（稳健）回归：异常值和模型错误
+1.1.14.1. Different scenario and useful concepts
+1.1.14.2. RANSAC: RANdom SAmple Consensus
+1.1.14.2.1. Details of the algorithm
+
+
+1.1.14.3. Theil-Sen estimator: generalized-median-based estimator
+1.1.14.3.1. Theoretical considerations1.1.14.1. Different scenario and useful concepts1.1.14.2. RANSAC: RANdom SAmple Consensus
+1.1.14.2.1. Details of the algorithm1.1.14.2.1. Details of the algorithm1.1.14.3. Theil-Sen estimator: generalized-median-based estimator
+1.1.14.3.1. Theoretical considerations1.1.14.3.1. Theoretical considerations1.1.15. Polynomial regression: extending linear models with basis functions1.2. 线性与二次判别分析
+1.2.1. 使用LDA来降维
+1.2.2. LDA和QDA分类器的数学表达
+1.2.3. LDA降维的数学表达
+1.2.4. 缩减(Shrinkage)
+1.2.5. 估计算法1.2.1. 使用LDA来降维1.2.2. LDA和QDA分类器的数学表达1.2.3. LDA降维的数学表达1.2.4. 缩减(Shrinkage)1.2.5. 估计算法1.3. Kernel ridge regression1.4. Support Vector Machines
+1.4.1. Classification
+1.4.1.1. Multi-class classification
+1.4.1.2. Scores and probabilities
+1.4.1.3. Unbalanced problems
+
+
+1.4.2. Regression
+1.4.3. Density estimation, novelty detection
+1.4.4. Complexity
+1.4.5. Tips on Practical Use
+1.4.6. Kernel functions
+1.4.6.1. Custom Kernels
+1.4.6.1.1. Using Python functions as kernels
+1.4.6.1.2. Using the Gram matrix
+1.4.6.1.3. Parameters of the RBF Kernel
+
+
+
+
+1.4.7. Mathematical formulation
+1.4.7.1. SVC
+1.4.7.2. NuSVC
+1.4.7.3. SVR
+
+
+1.4.8. Implementation details1.4.1. Classification
+1.4.1.1. Multi-class classification
+1.4.1.2. Scores and probabilities
+1.4.1.3. Unbalanced problems1.4.1.1. Multi-class classification1.4.1.2. Scores and probabilities1.4.1.3. Unbalanced problems1.4.2. Regression1.4.3. Density estimation, novelty detection1.4.4. Complexity1.4.5. Tips on Practical Use1.4.6. Kernel functions
+1.4.6.1. Custom Kernels
+1.4.6.1.1. Using Python functions as kernels
+1.4.6.1.2. Using the Gram matrix
+1.4.6.1.3. Parameters of the RBF Kernel1.4.6.1. Custom Kernels
+1.4.6.1.1. Using Python functions as kernels
+1.4.6.1.2. Using the Gram matrix
+1.4.6.1.3. Parameters of the RBF Kernel1.4.6.1.1. Using Python functions as kernels1.4.6.1.2. Using the Gram matrix1.4.6.1.3. Parameters of the RBF Kernel1.4.7. Mathematical formulation
+1.4.7.1. SVC
+1.4.7.2. NuSVC
+1.4.7.3. SVR1.4.7.1. SVC1.4.7.2. NuSVC1.4.7.3. SVR1.4.8. Implementation details1.5. 随机梯度下降
+1.5.1. 分类
+1.5.2. 回归
+1.5.3. 稀疏数据上的随机梯度下降
+1.5.4. 复杂度
+1.5.5. Tips on Practical Use
+1.5.6. 数学表达
+1.5.6.1. SGD
+
+
+1.5.7. 实现细节1.5.1. 分类1.5.2. 回归1.5.3. 稀疏数据上的随机梯度下降1.5.4. 复杂度1.5.5. Tips on Practical Use1.5.6. 数学表达
+1.5.6.1. SGD1.5.6.1. SGD1.5.7. 实现细节1.6. 最邻近法
+1.6.1. Unsupervised Nearest Neighbors
+1.6.1.1. Finding the Nearest Neighbors
+1.6.1.2. KDTree and BallTree Classes
+
+
+1.6.2. Nearest Neighbors Classification
+1.6.3. Nearest Neighbors Regression
+1.6.4. Nearest Neighbor Algorithms
+1.6.4.1. Brute Force
+1.6.4.2. K-D Tree
+1.6.4.3. Ball Tree
+1.6.4.4. Choice of Nearest Neighbors Algorithm
+1.6.4.5. Effect of leaf_size
+
+
+1.6.5. Nearest Centroid Classifier
+1.6.5.1. Nearest Shrunken Centroid
+
+
+1.6.6. Approximate Nearest Neighbors
+1.6.6.1. Locality Sensitive Hashing Forest
+1.6.6.2. Mathematical description of Locality Sensitive Hashing1.6.1. Unsupervised Nearest Neighbors
+1.6.1.1. Finding the Nearest Neighbors
+1.6.1.2. KDTree and BallTree Classes1.6.1.1. Finding the Nearest Neighbors1.6.1.2. KDTree and BallTree Classes1.6.2. Nearest Neighbors Classification1.6.3. Nearest Neighbors Regression1.6.4. Nearest Neighbor Algorithms
+1.6.4.1. Brute Force
+1.6.4.2. K-D Tree
+1.6.4.3. Ball Tree
+1.6.4.4. Choice of Nearest Neighbors Algorithm
+1.6.4.5. Effect of leaf_size1.6.4.1. Brute Force1.6.4.2. K-D Tree1.6.4.3. Ball Tree1.6.4.4. Choice of Nearest Neighbors Algorithm1.6.4.5. Effect of leaf_size1.6.5. Nearest Centroid Classifier
+1.6.5.1. Nearest Shrunken Centroid1.6.5.1. Nearest Shrunken Centroid1.6.6. Approximate Nearest Neighbors
+1.6.6.1. Locality Sensitive Hashing Forest
+1.6.6.2. Mathematical description of Locality Sensitive Hashing1.6.6.1. Locality Sensitive Hashing Forest1.6.6.2. Mathematical description of Locality Sensitive Hashing1.7. 高斯过程(Gaussian Processes)
+1.7.1. Examples
+1.7.1.1. 用一个回归样例来开场
+1.7.1.2. 拟合噪声数据
+
+
+1.7.2. 数学 公式
+1.7.2.1. 初始假设
+1.7.2.2. 最佳线性无偏预测（BLUP，The best linear unbiased prediction）
+1.7.2.3. 经验最佳线性无偏预测(EBLUP,The empirical best linear unbiased predictor)
+
+
+1.7.3. 相关性模型(Correlation Models)
+1.7.4. 回归模型
+1.7.5. 实现细节1.7.1. Examples
+1.7.1.1. 用一个回归样例来开场
+1.7.1.2. 拟合噪声数据1.7.1.1. 用一个回归样例来开场1.7.1.2. 拟合噪声数据1.7.2. 数学 公式
+1.7.2.1. 初始假设
+1.7.2.2. 最佳线性无偏预测（BLUP，The best linear unbiased prediction）
+1.7.2.3. 经验最佳线性无偏预测(EBLUP,The empirical best linear unbiased predictor)1.7.2.1. 初始假设1.7.2.2. 最佳线性无偏预测（BLUP，The best linear unbiased prediction）1.7.2.3. 经验最佳线性无偏预测(EBLUP,The empirical best linear unbiased predictor)1.7.3. 相关性模型(Correlation Models)1.7.4. 回归模型1.7.5. 实现细节1.8. Cross decomposition1.9. 朴素贝叶斯
+1.9.1. 朴素贝叶斯 高斯模型
+1.9.2. 朴素贝叶斯 多项式模型
+1.9.3. 朴素贝叶斯 伯努利模型
+1.9.4. 基于外存(Out-of-core)的朴素贝叶斯模型拟合1.9.1. 朴素贝叶斯 高斯模型1.9.2. 朴素贝叶斯 多项式模型1.9.3. 朴素贝叶斯 伯努利模型1.9.4. 基于外存(Out-of-core)的朴素贝叶斯模型拟合1.10. Decision Trees
+1.10.1. Classification
+1.10.2. Regression
+1.10.3. Multi-output problems
+1.10.4. Complexity
+1.10.5. Tips on practical use
+1.10.6. Tree algorithms: ID3, C4.5, C5.0 and CART
+1.10.7. Mathematical formulation
+1.10.7.1. Classification criteria
+1.10.7.2. Regression criteria1.10.1. Classification1.10.2. Regression1.10.3. Multi-output problems1.10.4. Complexity1.10.5. Tips on practical use1.10.6. Tree algorithms: ID3, C4.5, C5.0 and CART1.10.7. Mathematical formulation
+1.10.7.1. Classification criteria
+1.10.7.2. Regression criteria1.10.7.1. Classification criteria1.10.7.2. Regression criteria1.11. 集成方法
+1.11.1. Bagging meta-estimator
+1.11.2. Forests of randomized trees
+1.11.2.1. Random Forests
+1.11.2.2. Extremely Randomized Trees
+1.11.2.3. Parameters
+1.11.2.4. Parallelization
+1.11.2.5. Feature importance evaluation
+1.11.2.6. Totally Random Trees Embedding
+
+
+1.11.3. AdaBoost
+1.11.3.1. Usage
+
+
+1.11.4. Gradient Tree Boosting
+1.11.4.1. Classification
+1.11.4.2. Regression
+1.11.4.3. Fitting additional weak-learners
+1.11.4.4. Controlling the tree size
+1.11.4.5. Mathematical formulation
+1.11.4.5.1. Loss Functions
+
+
+1.11.4.6. Regularization
+1.11.4.6.1. Shrinkage
+1.11.4.6.2. Subsampling
+
+
+1.11.4.7. Interpretation
+1.11.4.7.1. Feature importance
+1.11.4.7.2. Partial dependence
+
+
+
+
+1.11.5. VotingClassifier
+1.11.5.1. Majority Class Labels (Majority/Hard Voting)
+1.11.5.1.1. Usage
+
+
+1.11.5.2. Weighted Average Probabilities (Soft Voting)
+1.11.5.3. Using the VotingClassifier with GridSearch
+1.11.5.3.1. Usage1.11.1. Bagging meta-estimator1.11.2. Forests of randomized trees
+1.11.2.1. Random Forests
+1.11.2.2. Extremely Randomized Trees
+1.11.2.3. Parameters
+1.11.2.4. Parallelization
+1.11.2.5. Feature importance evaluation
+1.11.2.6. Totally Random Trees Embedding1.11.2.1. Random Forests1.11.2.2. Extremely Randomized Trees1.11.2.3. Parameters1.11.2.4. Parallelization1.11.2.5. Feature importance evaluation1.11.2.6. Totally Random Trees Embedding1.11.3. AdaBoost
+1.11.3.1. Usage1.11.3.1. Usage1.11.4. Gradient Tree Boosting
+1.11.4.1. Classification
+1.11.4.2. Regression
+1.11.4.3. Fitting additional weak-learners
+1.11.4.4. Controlling the tree size
+1.11.4.5. Mathematical formulation
+1.11.4.5.1. Loss Functions
+
+
+1.11.4.6. Regularization
+1.11.4.6.1. Shrinkage
+1.11.4.6.2. Subsampling
+
+
+1.11.4.7. Interpretation
+1.11.4.7.1. Feature importance
+1.11.4.7.2. Partial dependence1.11.4.1. Classification1.11.4.2. Regression1.11.4.3. Fitting additional weak-learners1.11.4.4. Controlling the tree size1.11.4.5. Mathematical formulation
+1.11.4.5.1. Loss Functions1.11.4.5.1. Loss Functions1.11.4.6. Regularization
+1.11.4.6.1. Shrinkage
+1.11.4.6.2. Subsampling1.11.4.6.1. Shrinkage1.11.4.6.2. Subsampling1.11.4.7. Interpretation
+1.11.4.7.1. Feature importance
+1.11.4.7.2. Partial dependence1.11.4.7.1. Feature importance1.11.4.7.2. Partial dependence1.11.5. VotingClassifier
+1.11.5.1. Majority Class Labels (Majority/Hard Voting)
+1.11.5.1.1. Usage
+
+
+1.11.5.2. Weighted Average Probabilities (Soft Voting)
+1.11.5.3. Using the VotingClassifier with GridSearch
+1.11.5.3.1. Usage1.11.5.1. Majority Class Labels (Majority/Hard Voting)
+1.11.5.1.1. Usage1.11.5.1.1. Usage1.11.5.2. Weighted Average Probabilities (Soft Voting)1.11.5.3. Using the VotingClassifier with GridSearch
+1.11.5.3.1. Usage1.11.5.3.1. Usage1.12. Multiclass and multilabel algorithms
+1.12.1. Multilabel classification format
+1.12.2. One-Vs-The-Rest
+1.12.2.1. Multiclass learning
+1.12.2.2. Multilabel learning
+
+
+1.12.3. One-Vs-One
+1.12.3.1. Multiclass learning
+
+
+1.12.4. Error-Correcting Output-Codes
+1.12.4.1. Multiclass learning1.12.1. Multilabel classification format1.12.2. One-Vs-The-Rest
+1.12.2.1. Multiclass learning
+1.12.2.2. Multilabel learning1.12.2.1. Multiclass learning1.12.2.2. Multilabel learning1.12.3. One-Vs-One
+1.12.3.1. Multiclass learning1.12.3.1. Multiclass learning1.12.4. Error-Correcting Output-Codes
+1.12.4.1. Multiclass learning1.12.4.1. Multiclass learning1.13. 特征选择(Feature selection)
+1.13.1. 移除低方差的特征(Removing features with low variance)
+1.13.2. 单变量特征选择(Univariate feature selection)
+1.13.3. 递归特征消除(Recursive feature elimination)
+1.13.4. 使用SelectFromModel选择特征(Feature selection using SelectFromModel)
+1.13.4.1. 基于L1的特征选择(L1-based feature selection)
+1.13.4.2. 随机稀疏模型(Randomized sparse models)
+1.13.4.3. 基于树的特征选择(Tree-based feature selection)
+
+
+1.13.5. 特征选择融入pipeline(Feature selection as part of a pipeline)1.13.1. 移除低方差的特征(Removing features with low variance)1.13.2. 单变量特征选择(Univariate feature selection)1.13.3. 递归特征消除(Recursive feature elimination)1.13.4. 使用SelectFromModel选择特征(Feature selection using SelectFromModel)
+1.13.4.1. 基于L1的特征选择(L1-based feature selection)
+1.13.4.2. 随机稀疏模型(Randomized sparse models)
+1.13.4.3. 基于树的特征选择(Tree-based feature selection)1.13.4.1. 基于L1的特征选择(L1-based feature selection)1.13.4.2. 随机稀疏模型(Randomized sparse models)1.13.4.3. 基于树的特征选择(Tree-based feature selection)1.13.5. 特征选择融入pipeline(Feature selection as part of a pipeline)1.14. Semi-Supervised
+1.14.1. Label Propagation1.14.1. Label Propagation1.15. Isotonic regression1.16. Probability calibration主页安装文档
+
+
+
+
+Scikit-learn 0.17 (stable)
+入门指南
+使用手册
+API
+FAQ
+贡献
+
+Scikit-learn 0.18 (development)
+Scikit-learn 0.16
+PDF 文档Scikit-learn 0.17 (stable)入门指南使用手册APIFAQ贡献Scikit-learn 0.18 (development)Scikit-learn 0.16PDF 文档例子2.3. Clustering
+2.3.1. Overview of clustering methods
+2.3.2. K-means
+2.3.2.1. Mini Batch K-Means
+
+
+2.3.3. Affinity Propagation
+2.3.4. Mean Shift
+2.3.5. Spectral clustering
+2.3.5.1. Different label assignment strategies
+
+
+2.3.6. Hierarchical clustering
+2.3.6.1. Different linkage type: Ward, complete and average linkage
+2.3.6.2. Adding connectivity constraints
+2.3.6.3. Varying the metric
+
+
+2.3.7. DBSCAN
+2.3.8. Birch
+2.3.9. Clustering performance evaluation
+2.3.9.1. Adjusted Rand index
+2.3.9.1.1. Advantages
+2.3.9.1.2. Drawbacks
+2.3.9.1.3. Mathematical formulation
+
+
+2.3.9.2. Mutual Information based scores
+2.3.9.2.1. Advantages
+2.3.9.2.2. Drawbacks
+2.3.9.2.3. Mathematical formulation
+
+
+2.3.9.3. Homogeneity, completeness and V-measure
+2.3.9.3.1. Advantages
+2.3.9.3.2. Drawbacks
+2.3.9.3.3. Mathematical formulation
+
+
+2.3.9.4. Silhouette Coefficient
+2.3.9.4.1. Advantages
+2.3.9.4.2. Drawbacks2.3.1. Overview of clustering methods2.3.2. K-means
+2.3.2.1. Mini Batch K-Means2.3.2.1. Mini Batch K-Means2.3.3. Affinity Propagation2.3.4. Mean Shift2.3.5. Spectral clustering
+2.3.5.1. Different label assignment strategies2.3.5.1. Different label assignment strategies2.3.6. Hierarchical clustering
+2.3.6.1. Different linkage type: Ward, complete and average linkage
+2.3.6.2. Adding connectivity constraints
+2.3.6.3. Varying the metric2.3.6.1. Different linkage type: Ward, complete and average linkage2.3.6.2. Adding connectivity constraints2.3.6.3. Varying the metric2.3.7. DBSCAN2.3.8. Birch2.3.9. Clustering performance evaluation
+2.3.9.1. Adjusted Rand index
+2.3.9.1.1. Advantages
+2.3.9.1.2. Drawbacks
+2.3.9.1.3. Mathematical formulation
+
+
+2.3.9.2. Mutual Information based scores
+2.3.9.2.1. Advantages
+2.3.9.2.2. Drawbacks
+2.3.9.2.3. Mathematical formulation
+
+
+2.3.9.3. Homogeneity, completeness and V-measure
+2.3.9.3.1. Advantages
+2.3.9.3.2. Drawbacks
+2.3.9.3.3. Mathematical formulation
+
+
+2.3.9.4. Silhouette Coefficient
+2.3.9.4.1. Advantages
+2.3.9.4.2. Drawbacks2.3.9.1. Adjusted Rand index
+2.3.9.1.1. Advantages
+2.3.9.1.2. Drawbacks
+2.3.9.1.3. Mathematical formulation2.3.9.1.1. Advantages2.3.9.1.2. Drawbacks2.3.9.1.3. Mathematical formulation2.3.9.2. Mutual Information based scores
+2.3.9.2.1. Advantages
+2.3.9.2.2. Drawbacks
+2.3.9.2.3. Mathematical formulation2.3.9.2.1. Advantages2.3.9.2.2. Drawbacks2.3.9.2.3. Mathematical formulation2.3.9.3. Homogeneity, completeness and V-measure
+2.3.9.3.1. Advantages
+2.3.9.3.2. Drawbacks
+2.3.9.3.3. Mathematical formulation2.3.9.3.1. Advantages2.3.9.3.2. Drawbacks2.3.9.3.3. Mathematical formulation2.3.9.4. Silhouette Coefficient
+2.3.9.4.1. Advantages
+2.3.9.4.2. Drawbacks2.3.9.4.1. Advantages2.3.9.4.2. DrawbacksInertia makes the assumption that clusters are convex and isotropic,
+
+
+
+
+2.5.1. Principal component analysis (PCA)
+2.5.1.1. Exact PCA and probabilistic interpretation
+2.5.1.2. Incremental PCA
+2.5.1.3. Approximate PCA
+2.5.1.4. Kernel PCA
+2.5.1.5. Sparse principal components analysis (SparsePCA and MiniBatchSparsePCA)
+
+
+2.5.2. Truncated singular value decomposition and latent semantic analysis
+2.5.3. Dictionary Learning
+2.5.3.1. Sparse coding with a precomputed dictionary
+2.5.3.2. Generic dictionary learning
+2.5.3.3. Mini-batch dictionary learning
+
+
+2.5.4. Factor Analysis
+2.5.5. Independent component analysis (ICA)
+2.5.6. Non-negative matrix factorization (NMF or NNMF)
+2.5.7. Latent Dirichlet Allocation (LDA)2.5.1. Principal component analysis (PCA)
+2.5.1.1. Exact PCA and probabilistic interpretation
+2.5.1.2. Incremental PCA
+2.5.1.3. Approximate PCA
+2.5.1.4. Kernel PCA
+2.5.1.5. Sparse principal components analysis (SparsePCA and MiniBatchSparsePCA)2.5.1.1. Exact PCA and probabilistic interpretation2.5.1.2. Incremental PCA2.5.1.3. Approximate PCA2.5.1.4. Kernel PCA2.5.1.5. Sparse principal components analysis (SparsePCA and MiniBatchSparsePCA)2.5.2. Truncated singular value decomposition and latent semantic analysis2.5.3. Dictionary Learning
+2.5.3.1. Sparse coding with a precomputed dictionary
+2.5.3.2. Generic dictionary learning
+2.5.3.3. Mini-batch dictionary learning2.5.3.1. Sparse coding with a precomputed dictionary2.5.3.2. Generic dictionary learning2.5.3.3. Mini-batch dictionary learning2.5.4. Factor Analysis2.5.5. Independent component analysis (ICA)2.5.6. Non-negative matrix factorization (NMF or NNMF)2.5.7. Latent Dirichlet Allocation (LDA)Comparison of LDA and PCA 2D projection of Iris datasetModel selection with Probabilistic PCA and Factor Analysis (FA)Using its partial_fit method on chunks of data fetched sequentially
+from the local hard drive or a network database.Calling its fit method on a memory mapped file using numpy.memmap.Incremental PCAFaces recognition example using eigenfaces and SVMsFaces dataset decompositions“Finding structure with randomness: Stochastic algorithms for
+constructing approximate matrix decompositions”
+Halko, et al., 2009Kernel PCAFaces dataset decompositionsClustering text documents using k-meansChristopher D. Manning, Prabhakar Raghavan and Hinrich Schütze (2008),
+Introduction to Information Retrieval, Cambridge University Press,
+chapter 18: Matrix decompositions & latent semantic indexingOrthogonal matching pursuit (Orthogonal Matching Pursuit (OMP) 正交匹配跟踪)Least-angle regression (Least Angle Regression最小角回归)Lasso computed by least-angle regressionLasso using coordinate descent (Lasso)ThresholdingSparse coding with a precomputed dictionaryImage denoising using dictionary learning“Online dictionary learning for sparse coding”
+J. Mairal, F. Bach, J. Ponce, G. Sapiro, 2009: This assumption leads to
+the probabilistic model of PCA.: This model is called
+FactorAnalysis, a classical statistical model. The matrix W is
+sometimes called the “factor loading matrix”.Model selection with Probabilistic PCA and Factor Analysis (FA)Blind source separation using FastICAFastICA on 2D point cloudsFaces dataset decompositionsFaces dataset decompositionsTopic extraction with Non-negative Matrix Factorization and Latent Dirichlet Allocation“Learning the parts of objects by non-negative matrix factorization”
+D. Lee, S. Seung, 1999“Non-negative Matrix Factorization with Sparseness Constraints”
+P. Hoyer, 2004“Projected gradient methods for non-negative matrix factorization”
+C.-J. Lin, 2007“SVD based initialization: A head start for nonnegative
+matrix factorization”
+C. Boutsidis, E. Gallopoulos, 2008“Fast local algorithms for large scale nonnegative matrix and tensor
+factorizations.”
+A. Cichocki, P. Anh-Huy, 2009For each topic , drawFor each document , drawFor each word  in document :Draw a topic indexDraw the observed wordTopic extraction with Non-negative Matrix Factorization and Latent Dirichlet Allocation“Latent Dirichlet Allocation”
+D. Blei, A. Ng, M. Jordan, 2003“Online Learning for Latent Dirichlet Allocation”
+M. Hoffman, D. Blei, F. Bach, 2010“Stochastic Variational Inference”
+M. Hoffman, D. Blei, C. Wang, J. Paisley, 2013主页安装文档
+
+
+
+
+
+
+3.1.1. Computing cross-validated metrics 计算交叉验证指标
+3.1.1.1. Obtaining predictions by cross-validation 通过交叉验证获得预测
+
+
+3.1.2. Cross validation iterators 交叉验证迭代器
+3.1.2.1. K-fold
+3.1.2.2. Stratified k-fold 分层 k-fold
+3.1.2.3. Label k-fold 标签 k-fold
+3.1.2.4. Leave-One-Out - LOO 留一
+3.1.2.5. Leave-P-Out - LPO
+3.1.2.6. Leave-One-Label-Out - LOLO
+3.1.2.7. Leave-P-Label-Out
+3.1.2.8. Random permutations cross-validation a.k.a. Shuffle & Split
+3.1.2.9. Label-Shuffle-Split 标签随机划分
+3.1.2.10. Predefined Fold-Splits / Validation-Sets 预定义 交叉划分 / 验证集合
+3.1.2.11. See also 其他资料
+
+
+3.1.3. A note on shuffling 打乱顺序的说明
+3.1.4. Cross validation and model selection 交叉验证和模型选择3.1.1. Computing cross-validated metrics 计算交叉验证指标
+3.1.1.1. Obtaining predictions by cross-validation 通过交叉验证获得预测3.1.1.1. Obtaining predictions by cross-validation 通过交叉验证获得预测3.1.2. Cross validation iterators 交叉验证迭代器
+3.1.2.1. K-fold
+3.1.2.2. Stratified k-fold 分层 k-fold
+3.1.2.3. Label k-fold 标签 k-fold
+3.1.2.4. Leave-One-Out - LOO 留一
+3.1.2.5. Leave-P-Out - LPO
+3.1.2.6. Leave-One-Label-Out - LOLO
+3.1.2.7. Leave-P-Label-Out
+3.1.2.8. Random permutations cross-validation a.k.a. Shuffle & Split
+3.1.2.9. Label-Shuffle-Split 标签随机划分
+3.1.2.10. Predefined Fold-Splits / Validation-Sets 预定义 交叉划分 / 验证集合
+3.1.2.11. See also 其他资料3.1.2.1. K-fold3.1.2.2. Stratified k-fold 分层 k-fold3.1.2.3. Label k-fold 标签 k-fold3.1.2.4. Leave-One-Out - LOO 留一3.1.2.5. Leave-P-Out - LPO3.1.2.6. Leave-One-Label-Out - LOLO3.1.2.7. Leave-P-Label-Out3.1.2.8. Random permutations cross-validation a.k.a. Shuffle & Split3.1.2.9. Label-Shuffle-Split 标签随机划分3.1.2.10. Predefined Fold-Splits / Validation-Sets 预定义 交叉划分 / 验证集合3.1.2.11. See also 其他资料3.1.3. A note on shuffling 打乱顺序的说明3.1.4. Cross validation and model selection 交叉验证和模型选择3.2. Grid Search: Searching for estimator parameters
+3.2.1. Exhaustive Grid Search
+3.2.2. Randomized Parameter Optimization
+3.2.3. Tips for parameter search
+3.2.3.1. Specifying an objective metric
+3.2.3.2. Composite estimators and parameter spaces
+3.2.3.3. Model selection: development and evaluation
+3.2.3.4. Parallelism
+3.2.3.5. Robustness to failure
+
+
+3.2.4. Alternatives to brute force parameter search
+3.2.4.1. Model specific cross-validation
+3.2.4.1.1. sklearn.linear_model.ElasticNetCV
+3.2.4.1.2. sklearn.linear_model.LarsCV
+3.2.4.1.3. sklearn.linear_model.LassoCV
+3.2.4.1.3.1. Examples using sklearn.linear_model.LassoCV
+
+
+3.2.4.1.4. sklearn.linear_model.LassoLarsCV
+3.2.4.1.4.1. Examples using sklearn.linear_model.LassoLarsCV
+
+
+3.2.4.1.5. sklearn.linear_model.LogisticRegressionCV
+3.2.4.1.6. sklearn.linear_model.MultiTaskElasticNetCV
+3.2.4.1.7. sklearn.linear_model.MultiTaskLassoCV
+3.2.4.1.8. sklearn.linear_model.OrthogonalMatchingPursuitCV
+3.2.4.1.8.1. Examples using sklearn.linear_model.OrthogonalMatchingPursuitCV
+
+
+3.2.4.1.9. sklearn.linear_model.RidgeCV
+3.2.4.1.9.1. Examples using sklearn.linear_model.RidgeCV
+
+
+3.2.4.1.10. sklearn.linear_model.RidgeClassifierCV
+
+
+3.2.4.2. Information Criterion
+3.2.4.2.1. sklearn.linear_model.LassoLarsIC
+3.2.4.2.1.1. Examples using sklearn.linear_model.LassoLarsIC
+
+
+
+
+3.2.4.3. Out of Bag Estimates
+3.2.4.3.1. sklearn.ensemble.RandomForestClassifier
+3.2.4.3.1.1. Examples using sklearn.ensemble.RandomForestClassifier
+
+
+3.2.4.3.2. sklearn.ensemble.RandomForestRegressor
+3.2.4.3.2.1. Examples using sklearn.ensemble.RandomForestRegressor
+
+
+3.2.4.3.3. sklearn.ensemble.ExtraTreesClassifier
+3.2.4.3.3.1. Examples using sklearn.ensemble.ExtraTreesClassifier
+
+
+3.2.4.3.4. sklearn.ensemble.ExtraTreesRegressor
+3.2.4.3.4.1. Examples using sklearn.ensemble.ExtraTreesRegressor
+
+
+3.2.4.3.5. sklearn.ensemble.GradientBoostingClassifier
+3.2.4.3.5.1. Examples using sklearn.ensemble.GradientBoostingClassifier
+
+
+3.2.4.3.6. sklearn.ensemble.GradientBoostingRegressor
+3.2.4.3.6.1. Examples using sklearn.ensemble.GradientBoostingRegressor3.2.1. Exhaustive Grid Search3.2.2. Randomized Parameter Optimization3.2.3. Tips for parameter search
+3.2.3.1. Specifying an objective metric
+3.2.3.2. Composite estimators and parameter spaces
+3.2.3.3. Model selection: development and evaluation
+3.2.3.4. Parallelism
+3.2.3.5. Robustness to failure3.2.3.1. Specifying an objective metric3.2.3.2. Composite estimators and parameter spaces3.2.3.3. Model selection: development and evaluation3.2.3.4. Parallelism3.2.3.5. Robustness to failure3.2.4. Alternatives to brute force parameter search
+3.2.4.1. Model specific cross-validation
+3.2.4.1.1. sklearn.linear_model.ElasticNetCV
+3.2.4.1.2. sklearn.linear_model.LarsCV
+3.2.4.1.3. sklearn.linear_model.LassoCV
+3.2.4.1.3.1. Examples using sklearn.linear_model.LassoCV
+
+
+3.2.4.1.4. sklearn.linear_model.LassoLarsCV
+3.2.4.1.4.1. Examples using sklearn.linear_model.LassoLarsCV
+
+
+3.2.4.1.5. sklearn.linear_model.LogisticRegressionCV
+3.2.4.1.6. sklearn.linear_model.MultiTaskElasticNetCV
+3.2.4.1.7. sklearn.linear_model.MultiTaskLassoCV
+3.2.4.1.8. sklearn.linear_model.OrthogonalMatchingPursuitCV
+3.2.4.1.8.1. Examples using sklearn.linear_model.OrthogonalMatchingPursuitCV
+
+
+3.2.4.1.9. sklearn.linear_model.RidgeCV
+3.2.4.1.9.1. Examples using sklearn.linear_model.RidgeCV
+
+
+3.2.4.1.10. sklearn.linear_model.RidgeClassifierCV
+
+
+3.2.4.2. Information Criterion
+3.2.4.2.1. sklearn.linear_model.LassoLarsIC
+3.2.4.2.1.1. Examples using sklearn.linear_model.LassoLarsIC
+
+
+
+
+3.2.4.3. Out of Bag Estimates
+3.2.4.3.1. sklearn.ensemble.RandomForestClassifier
+3.2.4.3.1.1. Examples using sklearn.ensemble.RandomForestClassifier
+
+
+3.2.4.3.2. sklearn.ensemble.RandomForestRegressor
+3.2.4.3.2.1. Examples using sklearn.ensemble.RandomForestRegressor
+
+
+3.2.4.3.3. sklearn.ensemble.ExtraTreesClassifier
+3.2.4.3.3.1. Examples using sklearn.ensemble.ExtraTreesClassifier
+
+
+3.2.4.3.4. sklearn.ensemble.ExtraTreesRegressor
+3.2.4.3.4.1. Examples using sklearn.ensemble.ExtraTreesRegressor
+
+
+3.2.4.3.5. sklearn.ensemble.GradientBoostingClassifier
+3.2.4.3.5.1. Examples using sklearn.ensemble.GradientBoostingClassifier
+
+
+3.2.4.3.6. sklearn.ensemble.GradientBoostingRegressor
+3.2.4.3.6.1. Examples using sklearn.ensemble.GradientBoostingRegressor3.2.4.1. Model specific cross-validation
+3.2.4.1.1. sklearn.linear_model.ElasticNetCV
+3.2.4.1.2. sklearn.linear_model.LarsCV
+3.2.4.1.3. sklearn.linear_model.LassoCV
+3.2.4.1.3.1. Examples using sklearn.linear_model.LassoCV
+
+
+3.2.4.1.4. sklearn.linear_model.LassoLarsCV
+3.2.4.1.4.1. Examples using sklearn.linear_model.LassoLarsCV
+
+
+3.2.4.1.5. sklearn.linear_model.LogisticRegressionCV
+3.2.4.1.6. sklearn.linear_model.MultiTaskElasticNetCV
+3.2.4.1.7. sklearn.linear_model.MultiTaskLassoCV
+3.2.4.1.8. sklearn.linear_model.OrthogonalMatchingPursuitCV
+3.2.4.1.8.1. Examples using sklearn.linear_model.OrthogonalMatchingPursuitCV
+
+
+3.2.4.1.9. sklearn.linear_model.RidgeCV
+3.2.4.1.9.1. Examples using sklearn.linear_model.RidgeCV
+
+
+3.2.4.1.10. sklearn.linear_model.RidgeClassifierCV3.2.4.1.1. sklearn.linear_model.ElasticNetCV3.2.4.1.2. sklearn.linear_model.LarsCV3.2.4.1.3. sklearn.linear_model.LassoCV
+3.2.4.1.3.1. Examples using sklearn.linear_model.LassoCV3.2.4.1.3.1. Examples using sklearn.linear_model.LassoCV3.2.4.1.4. sklearn.linear_model.LassoLarsCV
+3.2.4.1.4.1. Examples using sklearn.linear_model.LassoLarsCV3.2.4.1.4.1. Examples using sklearn.linear_model.LassoLarsCV3.2.4.1.5. sklearn.linear_model.LogisticRegressionCV3.2.4.1.6. sklearn.linear_model.MultiTaskElasticNetCV3.2.4.1.7. sklearn.linear_model.MultiTaskLassoCV3.2.4.1.8. sklearn.linear_model.OrthogonalMatchingPursuitCV
+3.2.4.1.8.1. Examples using sklearn.linear_model.OrthogonalMatchingPursuitCV3.2.4.1.8.1. Examples using sklearn.linear_model.OrthogonalMatchingPursuitCV3.2.4.1.9. sklearn.linear_model.RidgeCV
+3.2.4.1.9.1. Examples using sklearn.linear_model.RidgeCV3.2.4.1.9.1. Examples using sklearn.linear_model.RidgeCV3.2.4.1.10. sklearn.linear_model.RidgeClassifierCV3.2.4.2. Information Criterion
+3.2.4.2.1. sklearn.linear_model.LassoLarsIC
+3.2.4.2.1.1. Examples using sklearn.linear_model.LassoLarsIC3.2.4.2.1. sklearn.linear_model.LassoLarsIC
+3.2.4.2.1.1. Examples using sklearn.linear_model.LassoLarsIC3.2.4.2.1.1. Examples using sklearn.linear_model.LassoLarsIC3.2.4.3. Out of Bag Estimates
+3.2.4.3.1. sklearn.ensemble.RandomForestClassifier
+3.2.4.3.1.1. Examples using sklearn.ensemble.RandomForestClassifier
+
+
+3.2.4.3.2. sklearn.ensemble.RandomForestRegressor
+3.2.4.3.2.1. Examples using sklearn.ensemble.RandomForestRegressor
+
+
+3.2.4.3.3. sklearn.ensemble.ExtraTreesClassifier
+3.2.4.3.3.1. Examples using sklearn.ensemble.ExtraTreesClassifier
+
+
+3.2.4.3.4. sklearn.ensemble.ExtraTreesRegressor
+3.2.4.3.4.1. Examples using sklearn.ensemble.ExtraTreesRegressor
+
+
+3.2.4.3.5. sklearn.ensemble.GradientBoostingClassifier
+3.2.4.3.5.1. Examples using sklearn.ensemble.GradientBoostingClassifier
+
+
+3.2.4.3.6. sklearn.ensemble.GradientBoostingRegressor
+3.2.4.3.6.1. Examples using sklearn.ensemble.GradientBoostingRegressor3.2.4.3.1. sklearn.ensemble.RandomForestClassifier
+3.2.4.3.1.1. Examples using sklearn.ensemble.RandomForestClassifier3.2.4.3.1.1. Examples using sklearn.ensemble.RandomForestClassifier3.2.4.3.2. sklearn.ensemble.RandomForestRegressor
+3.2.4.3.2.1. Examples using sklearn.ensemble.RandomForestRegressor3.2.4.3.2.1. Examples using sklearn.ensemble.RandomForestRegressor3.2.4.3.3. sklearn.ensemble.ExtraTreesClassifier
+3.2.4.3.3.1. Examples using sklearn.ensemble.ExtraTreesClassifier3.2.4.3.3.1. Examples using sklearn.ensemble.ExtraTreesClassifier3.2.4.3.4. sklearn.ensemble.ExtraTreesRegressor
+3.2.4.3.4.1. Examples using sklearn.ensemble.ExtraTreesRegressor3.2.4.3.4.1. Examples using sklearn.ensemble.ExtraTreesRegressor3.2.4.3.5. sklearn.ensemble.GradientBoostingClassifier
+3.2.4.3.5.1. Examples using sklearn.ensemble.GradientBoostingClassifier3.2.4.3.5.1. Examples using sklearn.ensemble.GradientBoostingClassifier3.2.4.3.6. sklearn.ensemble.GradientBoostingRegressor
+3.2.4.3.6.1. Examples using sklearn.ensemble.GradientBoostingRegressor3.2.4.3.6.1. Examples using sklearn.ensemble.GradientBoostingRegressor3.3. Model evaluation: quantifying the quality of predictions
+3.3.1. The scoring parameter: defining model evaluation rules
+3.3.1.1. Common cases: predefined values
+3.3.1.2. Defining your scoring strategy from metric functions
+3.3.1.3. Implementing your own scoring object
+
+
+3.3.2. Classification metrics
+3.3.2.1. From binary to multiclass and multilabel
+3.3.2.2. Accuracy score
+3.3.2.3. Cohen’s kappa
+3.3.2.4. Confusion matrix
+3.3.2.5. Classification report
+3.3.2.6. Hamming loss
+3.3.2.7. Jaccard similarity coefficient score
+3.3.2.8. Precision, recall and F-measures
+3.3.2.8.1. Binary classification
+3.3.2.8.2. Multiclass and multilabel classification
+
+
+3.3.2.9. Hinge loss
+3.3.2.10. Log loss
+3.3.2.11. Matthews correlation coefficient
+3.3.2.12. Receiver operating characteristic (ROC)
+3.3.2.13. Zero one loss
+
+
+3.3.3. Multilabel ranking metrics
+3.3.3.1. Coverage error
+3.3.3.2. Label ranking average precision
+3.3.3.3. Ranking loss
+
+
+3.3.4. Regression metrics
+3.3.4.1. Explained variance score
+3.3.4.2. Mean absolute error
+3.3.4.3. Mean squared error
+3.3.4.4. Median absolute error
+3.3.4.5. R2 score, the coefficient of determination
+
+
+3.3.5. Clustering metrics
+3.3.6. Dummy estimators3.3.1. The scoring parameter: defining model evaluation rules
+3.3.1.1. Common cases: predefined values
+3.3.1.2. Defining your scoring strategy from metric functions
+3.3.1.3. Implementing your own scoring object3.3.1.1. Common cases: predefined values3.3.1.2. Defining your scoring strategy from metric functions3.3.1.3. Implementing your own scoring object3.3.2. Classification metrics
+3.3.2.1. From binary to multiclass and multilabel
+3.3.2.2. Accuracy score
+3.3.2.3. Cohen’s kappa
+3.3.2.4. Confusion matrix
+3.3.2.5. Classification report
+3.3.2.6. Hamming loss
+3.3.2.7. Jaccard similarity coefficient score
+3.3.2.8. Precision, recall and F-measures
+3.3.2.8.1. Binary classification
+3.3.2.8.2. Multiclass and multilabel classification
+
+
+3.3.2.9. Hinge loss
+3.3.2.10. Log loss
+3.3.2.11. Matthews correlation coefficient
+3.3.2.12. Receiver operating characteristic (ROC)
+3.3.2.13. Zero one loss3.3.2.1. From binary to multiclass and multilabel3.3.2.2. Accuracy score3.3.2.3. Cohen’s kappa3.3.2.4. Confusion matrix3.3.2.5. Classification report3.3.2.6. Hamming loss3.3.2.7. Jaccard similarity coefficient score3.3.2.8. Precision, recall and F-measures
+3.3.2.8.1. Binary classification
+3.3.2.8.2. Multiclass and multilabel classification3.3.2.8.1. Binary classification3.3.2.8.2. Multiclass and multilabel classification3.3.2.9. Hinge loss3.3.2.10. Log loss3.3.2.11. Matthews correlation coefficient3.3.2.12. Receiver operating characteristic (ROC)3.3.2.13. Zero one loss3.3.3. Multilabel ranking metrics
+3.3.3.1. Coverage error
+3.3.3.2. Label ranking average precision
+3.3.3.3. Ranking loss3.3.3.1. Coverage error3.3.3.2. Label ranking average precision3.3.3.3. Ranking loss3.3.4. Regression metrics
+3.3.4.1. Explained variance score
+3.3.4.2. Mean absolute error
+3.3.4.3. Mean squared error
+3.3.4.4. Median absolute error
+3.3.4.5. R2 score, the coefficient of determination3.3.4.1. Explained variance score3.3.4.2. Mean absolute error3.3.4.3. Mean squared error3.3.4.4. Median absolute error3.3.4.5. R2 score, the coefficient of determination3.3.5. Clustering metrics3.3.6. Dummy estimators3.4. Model persistence
+3.4.1. Persistence example
+3.4.2. Security & maintainability limitations3.4.1. Persistence example3.4.2. Security & maintainability limitations3.5. 验证曲线: 通过绘制评分图来评估模型
+3.5.1. Validation curve 验证曲线
+3.5.2. Learning curve 学习曲线3.5.1. Validation curve 验证曲线3.5.2. Learning curve 学习曲线主页安装文档
+
+
+
+
+
+4.3.1. 标准化、去均值、方差缩放(variance scaling)
+4.3.1.1. 特征缩放至特定范围
+4.3.1.2. 稀疏数据缩放
+4.3.1.3. 含异常值数据缩放
+4.3.1.4. 核矩阵中心化
+
+
+4.3.2. 规范化
+4.3.3. 二值化
+4.3.3.1. 特征二值化
+
+
+4.3.4. 分类特征编码
+4.3.5. 缺失值处理（Imputation）
+4.3.6. 多项式特征生成
+4.3.7. 装换器定制4.3.1. 标准化、去均值、方差缩放(variance scaling)
+4.3.1.1. 特征缩放至特定范围
+4.3.1.2. 稀疏数据缩放
+4.3.1.3. 含异常值数据缩放
+4.3.1.4. 核矩阵中心化4.3.1.1. 特征缩放至特定范围4.3.1.2. 稀疏数据缩放4.3.1.3. 含异常值数据缩放4.3.1.4. 核矩阵中心化4.3.2. 规范化4.3.3. 二值化
+4.3.3.1. 特征二值化4.3.3.1. 特征二值化4.3.4. 分类特征编码4.3.5. 缺失值处理（Imputation）4.3.6. 多项式特征生成4.3.7. 装换器定制
