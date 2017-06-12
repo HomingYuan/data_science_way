@@ -1,0 +1,2 @@
+1. pandas pd.read_csv()³ö´í
+Initializing from file failed £¨jupyter²Å³ö´í£©

@@ -21,4 +21,10 @@ regr.fit(data_x_train, data_y_train)
 
 warning:Found input variables with inconsistent numbers of samples: [1, 12]
 
+request:
+	data_x_train=[[175], [159], [155], [152], [158], [154], [164], [168], [166], [159], [164]]
+	data_y_test = [[64], [41], [38], [35], [44], [41], [51], [57], [49], [47], [46]]
+or:
+	data_x_train = np.array([175, 159, 155, 152, 158, 154, 164, 168, 166, 159, 164]).reshape(11, 1)
+	data_y_train = np.array([64, 41, 38, 35, 44, 41, 51, 57, 49, 47, 46]).reshape(11, 1)
 
