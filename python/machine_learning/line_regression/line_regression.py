@@ -6,6 +6,9 @@
 @file: line_regression.py
 @time: 2017/6/11 22:52
 """
+# refrence blog:http://blog.csdn.net/u013719780/article/details/51742982,http://scikit-learn.org/stable/index.html
+# refrence book scikit_learn_docs.pdf
+
 from sklearn import linear_model
 import matplotlib.pyplot as plt
 import numpy as np
