@@ -60,4 +60,4 @@ print(regr.intercept_)
 
 data = pd.read_csv('Advertising.csv')
 print(data.head())
-# print(os.path.abspath(''))
+print(os.path.abspath(''))
