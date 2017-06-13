@@ -29,3 +29,4 @@
 16 退回到想回的版本，先git log 查看提交日志，根据提交日志，拿到commit_id， 然后git reset --hard commit_id
 17 推出git log模式 enter q
 18 git commit 时跳出文本编译器，让你写多行  参考网站：http://www.oschina.net/news/69705/git-commit-message-and-changelog-guide
+19.把github上的仓库clone到本地，用github客户端选择要clone的仓库，勾选，然后选择clone到的本地地址
