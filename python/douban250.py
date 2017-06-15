@@ -35,7 +35,7 @@ l = []
 
 
 for page in range(10):
-    soup = BeautifulSoup(get_html(6),'lxml')
+    soup = BeautifulSoup(get_html(page),'lxml')
     for item in soup.find_all('a'):
         item1 = str(item)
         word_start = item1.find('title')
