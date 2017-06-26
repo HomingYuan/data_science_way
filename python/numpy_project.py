@@ -9,7 +9,6 @@
 
 import os
 import pygame
-import time
 import numpy as np
 
 
@@ -27,7 +26,7 @@ def play_music_random(path):
     pygame.mixer.init()
     pygame.mixer.music.load(path)
     pygame.mixer.music.play()
-    while pygame.mixer.music.get_busy() == True:  # 实现播放完后，播放下一首
+    while pygame.mixer.music.get_busy():  # 实现播放完后，播放下一首
         pass
 
 
@@ -39,20 +38,6 @@ def main():
         print("...播放音乐...\n %s" % t)
         play_music_random(t)
 
+
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -10,9 +10,9 @@
 
 # 爬取网页http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%e5%85%a8%e5%9b%bd&kw=python&sm=0&source=0&sg=c131af6ec2c74dfba41100e1c8925118&p=1
 import urllib.request
-import re
+
 from bs4 import BeautifulSoup
-import xlwt#用来创建excel文档并写入数据
+
 
 
 def get_content(page=2):

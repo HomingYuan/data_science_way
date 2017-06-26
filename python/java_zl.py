@@ -10,9 +10,7 @@
 
 # 爬取网页http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%e5%85%a8%e5%9b%bd&kw=java&sm=0&source=0&sg=c131af6ec2c74dfba41100e1c8925118&p=1
 import urllib.request
-import re
 from bs4 import BeautifulSoup
-import xlwt#用来创建excel文档并写入数据
 
 
 def get_content(page=2):
@@ -25,9 +23,6 @@ def get_content(page=2):
     data.close()
     return html
 
-
-#print(get_content(1))
-
 l = []
 '''
 for link in soup.find_all('td'):
@@ -35,29 +30,18 @@ for link in soup.find_all('td'):
 '''
 for page in range(1,91):
     soup = BeautifulSoup(get_content(page), 'lxml')
-    for i in soup.find_all('td', class_=['zwmc','gsmc', 'zwyx', 'gzdd', 'gxsj']):
+    for i in soup.find_all('td', class_=['zwmc', 'gsmc', 'zwyx', 'gzdd', 'gxsj']):
         l.append(i.get_text().strip())
 
 
-
-
-fo = open('java_job_zl.csv', 'w', encoding='utf-8')
-for i in range(len(l)):
-    if i % 5 == 0:
-        fo.write(l[i])
-        fo.write('   ')
-    if i % 5 == 1:
-        fo.write(l[i])
-        fo.write('   ')
-    if i % 5 == 2:
-        fo.write(l[i])
-        fo.write('  ')
-    if i%5 ==3:
-        fo.write(l[i])
-        fo.write('  ')
-    if i%5 ==4:
-        fo.write(l[i])
-        fo.write('\n')
+with open('java_job_zl.csv', 'w', encoding='utf-8') as fo:
+    for i in range(len(l)):
+        if i % 5 != 4:
+            fo.write(l[i])
+            fo.write(',')
+        if i % 5 == 4:
+            fo.write(l[i])
+            fo.write('\n')
 
 
 
