@@ -26,9 +26,9 @@ for city in citys:
     for page in range(1,2):
         try:
             soup =  BeautifulSoup(get_html(city,page), 'lxml')
-            for item in soup.find_all('div').attrs['class']:
-                    print('output',item.attrs)
-                    house_price.append(item.get_text().strip())
+            for item in soup.find_all('div'):
+                print('output',item.attrs)
+                house_price.append(item.get_text().strip())
         except:
             pass
         
