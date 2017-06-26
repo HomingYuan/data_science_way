@@ -1,4 +1,8 @@
-# -*- coding: utf-8 -*-
+opener.addheaders = [headers]
+    data = opener.open(url, timeout=30)
+    html = data.read()
+    data.close()
+    return html# -*- coding: utf-8 -*-
 """
 Created on Fri Jun 23 15:49:52 2017
 
@@ -12,11 +16,7 @@ def get_content(page):
     url = "http://www.kanunu8.com/book4/" + str(page) + "/index.html"
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0 ', 'host':'img01.zhaopin.cn'}
     opener = urllib.request.build_opener()
-    opener.addheaders = [headers]
-    data = opener.open(url, timeout=30)
-    html = data.read()
-    data.close()
-    return html
+    
 book_title = []
 for page in range(10100,10717):
     try:
