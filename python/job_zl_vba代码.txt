@@ -1,0 +1,34 @@
+Sub clean_date()
+
+For i = 2 To 95041
+
+    If Cells(i, 6) <> "" Then
+        If Cells(i, 7) <> "" Then
+        
+            Cells(i, 1) = Cells(i, 1) + Cells(i, 2) + Cells(i, 3) + Cells(i, 4) + Cells(i, 5)
+            Cells(i, 2) = Cells(i, 6)
+            Cells(i, 3) = Cells(i, 7)
+            Cells(i, 4) = Cells(i, 8)
+            Cells(i, 5) = Cells(i, 9)
+            Cells(i, 6) = " "
+            Cells(i, 7) = " "
+            Cells(i, 8) = " "
+            Cells(i, 9) = " "
+            
+        Else
+            Cells(i, 1) = Cells(i, 1) + Cells(i, 2)
+            Cells(i, 2) = Cells(i, 3)
+            Cells(i, 4) = Cells(i, 5)
+            Cells(i, 5) = Cells(i, 6)
+            Cells(i, 6) = " "
+            Cells(i, 7) = " "
+            Cells(i, 8) = " "
+            Cells(i, 9) = " "
+        
+        End If
+    
+    End If
+
+Next i
+
+End Sub

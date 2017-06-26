@@ -36,7 +36,7 @@ def main():
             except:
                 pass
 
-    with open('job_zl.csv', 'w', encoding='utf-8') as f:
+    with open('job_analyse_zl.csv', 'w', encoding='utf-8') as f:
         f.write('岗位')
         f.write(',')
         f.write('公司')
