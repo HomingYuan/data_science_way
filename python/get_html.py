@@ -32,7 +32,7 @@ def main():
             try:
                 soup = BeautifulSoup(get_content(kw, page), 'lxml')
                 for item in soup.find_all('td', class_=['zwmc', 'gsmc', 'zwyx', 'gzdd', 'gxsj']):
-                    job_list.append(item.get_text().strip())
+                    job_list.append(item.get_text().strip())                                   
             except:
                 pass
 
