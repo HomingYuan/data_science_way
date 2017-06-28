@@ -34,7 +34,7 @@ def get_content(kw, page):
     data.close()
     return html
 
-kws = ['java', 'python', 'php', '机器学习', '数据分析', 'BI', 'go',  'javascript', 'r语言',
+kws = ['java', 'python', 'php', '机器学习', '数据分析', 'go',  'javascript',
        '数据挖掘', '大数据', '智能家居', 'vr工程师', '机器人', '深度学习', '人工智能']
 
 count = 0
