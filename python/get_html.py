@@ -9,6 +9,17 @@
 import urllib.request
 from bs4 import BeautifulSoup
 import urllib.parse
+import time
+import pymysql
+# 链接到mysql
+connection = pymysql.connect(host='127.0.0.1',
+                             port=3306,
+                             user='root',
+                             password='password',
+                             db='y1',
+                             charset='utf8mb4',
+                             cursorclass=pymysql.cursors.DictCursor)
+curson = connection.cursor()
 
 
 def get_content(kw, page):
@@ -24,7 +35,15 @@ def get_content(kw, page):
 kws = ['java', 'python', 'php', '机器学习', '数据分析', 'BI', 'go',  'javascript', 'r语言',
        '数据挖掘', '大数据', '智能家居', 'vr工程师', '机器人', '深度学习', '人工智能']
 job_list = []
-
+# 写到mysql中
+for i in job_list:
+    sql_insert = "insert into job(position,company,salary,location,post_time) " + "values(" + i + ')'
+    try:
+        curson.execute(sql_insert)
+        connection.commit()
+    except Exception as e:
+        print(e)
+        connection.rollback()
 
 def main():
     for kw in kws:
@@ -36,16 +55,11 @@ def main():
             except:
                 pass
 
-    with open('job_analyse_zl.csv', 'w', encoding='utf-8') as f:
-        f.write('岗位')
-        f.write(',')
-        f.write('公司')
-        f.write(',')
-        f.write('工资')
-        f.write(',')
-        f.write('地区')
-        f.write(',')
-        f.write('发布时间')
+    with open('job_analyse_zl.csv', 'a', encoding='utf-8') as f:  # 不覆盖原来内容
+        f.write('\n')
+        f.write('\n')
+        f.write(time.strftime("%I:%M:%S"))
+        f.write('\n')
         f.write('\n')
         for i in range(len(job_list)):
             if i % 5 != 4:

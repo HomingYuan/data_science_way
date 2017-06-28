@@ -18,14 +18,18 @@ def check_contain_chinese(check_str):
             return True
     return False
 
-df = pd.read_csv('job_analyse_zl.csv',sep=',', error_bad_lines=False)
+df = pd.read_csv('job_analyse_zl.csv', sep=',', error_bad_lines=False, names=['岗位', '公司', '工资', '地区', '发布时间'])
 # if there is bad line use error_bad_lines = False
+# print(df.head())
+
 position = df['岗位']
 company = df['公司']
 salary = df['工资']
 location = df ['地区']
 time = df['发布时间']
 salary_100 = salary[:100]
+
+
 
 salary_high =[]
 salary_low = []
@@ -50,7 +54,13 @@ for i in salary_high:
         salary_high1.append(int(i))
     else:
         salary_high1.append(0)
+position = [i for i in position]
+company = [i for i in company]
+df1 = pd.DataFrame([position, company, salary_low1, salary_high1], index=['position', 'company', 'salary_low', 'salary_high']).T
+df1.to_csv('job_clean_data.csv',sep=',',encoding='utf-8') # 写到本地文件
 
+# print(df1.head())
+# print(df.head())
 """
 
 class clear_data(object):
