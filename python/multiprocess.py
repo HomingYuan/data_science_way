@@ -36,7 +36,7 @@ def main():
     kws = ['java', 'python', 'php', '机器学习', '数据分析',  'javascript',
        '数据挖掘', '大数据', '智能家居', 'vr工程师', '机器人', '深度学习', '人工智能'] 
     for kw in kws:
-        for page in range(1, 100):
+        for page in range(1, 30):
              url = "http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%e5%85%a8%e5%9b%bd&kw=" + urllib.parse.quote(kw) + \
             "&sm=0&source=0&sg=c131af6ec2c74dfba41100e1c8925118&p="+str(page)+'.html'
              t = threading.Thread(target=get_content,args=(url, kw, page))
