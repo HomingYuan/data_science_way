@@ -56,7 +56,7 @@ def main():
         except:
             pass
     
-    end = datetime.now()
+    
    
     
     with open('test.csv', 'w', encoding='utf-8') as f:  # 不覆盖原来内容
@@ -68,6 +68,7 @@ def main():
             if i % 5 == 4:
                 f.write(job_list[i])
                 f.write('\n')
+    end = datetime.now()            
     print(end)
     print("程序耗时： " + str(end-now))
     
