@@ -34,7 +34,8 @@ def main():
     path = r'D:\CloudMusic'
     playlist1 = traverse_file(path)
     for i in np.arange(len(playlist1)):
-        t = playlist1[np.random.randint(0, len(playlist1))]
+        # t = playlist1[np.random.randint(0, len(playlist1))]
+        t = np.random.choice(playlist1)
         print("...播放音乐...\n %s" % t)
         play_music_random(t)
 
