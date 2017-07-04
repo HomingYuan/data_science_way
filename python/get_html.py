@@ -61,7 +61,8 @@ def main():
 
     with open('job_analyse_zl.csv', 'a', encoding='utf-8') as f:  # 不覆盖原来内容
         f.write('\n')
-        f.write(str(datetime.now()))
+        f.write(str(datetime.now())[:-7])
+        f.write('\n')
         for i in range(len(job_list)):
             if i % 5 != 4:
                 f.write(job_list[i])
