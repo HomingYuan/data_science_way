@@ -29,7 +29,7 @@ location = df ['地区']
 time = df['发布时间']
 salary_100 = salary[:100]
 
-
+print(position)
 
 salary_high =[]
 salary_low = []
@@ -57,10 +57,9 @@ for i in salary_high:
 position = [i for i in position]
 company = [i for i in company]
 df1 = pd.DataFrame([position, company, salary_low1, salary_high1], index=['position', 'company', 'salary_low', 'salary_high']).T
-df1.to_csv('job_clean_data.csv',sep=',',encoding='utf-8') # 写到本地文件
+# df1.to_csv('job_clean_data.csv',sep=',',encoding='utf-8') # 写到本地文件
 
-# print(df1.head())
-# print(df.head())
+
 """
 
 class clear_data(object):
