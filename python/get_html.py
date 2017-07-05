@@ -9,9 +9,13 @@
 import urllib.request
 from bs4 import BeautifulSoup
 import urllib.parse
-import time
 import pymysql
 from datetime import datetime
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f11ccded1403378631ed77b09dbacf85897c7814
 # 链接到mysql
 connection = pymysql.connect(host='127.0.0.1',
                              port=3306,
@@ -47,8 +51,13 @@ for i in job_list:
         connection.rollback()
 
 def main():
+<<<<<<< HEAD
     now = datetime.now()
     print(now)
+=======
+    start = datetime.now()
+    print(start)
+>>>>>>> f11ccded1403378631ed77b09dbacf85897c7814
     for kw in kws:
         for page in range(1, 100):
             try:
@@ -60,9 +69,7 @@ def main():
 
     with open('job_analyse_zl.csv', 'a', encoding='utf-8') as f:  # 不覆盖原来内容
         f.write('\n')
-        f.write('\n')
-        f.write(time.strftime("%I:%M:%S"))
-        f.write('\n')
+        f.write(str(datetime.now())[:-7])
         f.write('\n')
         for i in range(len(job_list)):
             if i % 5 != 4:
@@ -71,9 +78,16 @@ def main():
             if i % 5 == 4:
                 f.write(job_list[i])
                 f.write('\n')
+<<<<<<< HEAD
     end = datetime.now()
     print('程序运行%s'%(str(end-now)))
 
+=======
+
+    end = datetime.now()
+    print(end)
+    print("程序耗时： " + str(end - start))
+>>>>>>> f11ccded1403378631ed77b09dbacf85897c7814
 if __name__ == '__main__':
     main()
 

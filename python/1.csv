@@ -1,0 +1,33 @@
+,Dataset with electrical impedance measurements in samples of freshly excised tissue from the breast,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4
+0,,,,,
+1,106 instances,,,,
+2,10 attributes: 9 features+1class attribute,,,,
+3,,,,,
+4,Six classes of freshly excised tissue were studied using electrical impedance measurements:,,,,
+5,,,,,# of cases
+6,,Car,Carcinoma,,21
+7,,Fad,Fibro-adenoma,,15
+8,,Mas,Mastopathy,,18
+9,,Gla,Glandular,,16
+10,,Con,Connective,,14
+11,,Adi,Adipose,,22
+12,,,,,106
+13,"Impedance measurements were made at the frequencies: 15.625, 31.25, 62.5, 125, 250, 500, 1000 KHz",,,,
+14,"These measurements plotted in the (real, -imaginary) plane constitute ",,,,
+15,the impedance spectrum from where the features below are computed.,,,,
+16,,,,,
+17,,,,,
+18,9 features:,,,,
+19,,,,,
+20,,I0,Impedivity (ohm) at zero frequency,,
+21,,PA500,phase angle at 500 KHz,,
+22,,HFS,high-frequency slope of phase angle,,
+23,,DA,impedance distance between spectral ends,,
+24,,AREA,area under spectrum,,
+25,,A/DA,area normalized by DA,,
+26,,MAX IP,maximum of the spectrum,,
+27,,DR,distance between I0 and real part of the maximum frequency point,,
+28,,P,length of the spectral curve,,
+29,,,,,
+30,References: ,"J. Jossinet (1996) Variability of impedivity in normal and pathological breast tissue. Med. & Biol. Eng. & Comput, 34: 346-350.",,,
+31,,"JE Silva, JP Marques de S¨¢, J Jossinet (2000) Classification of Breast Tissue by Electrical Impedance Spectroscopy. Med & Bio Eng & Computing, 38:26-30.",,,

@@ -11,6 +11,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import urllib.parse
 import pymysql
+from datetime import datetime
 # 链接到mysql
 connection = pymysql.connect(host='127.0.0.1',
                              port=3306,
@@ -20,6 +21,9 @@ connection = pymysql.connect(host='127.0.0.1',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 curson = connection.cursor()
+
+start = datetime.now()
+print(start)
 
 
 def get_content(kw, page):
@@ -51,9 +55,10 @@ for kw in kws:
 
 # 写到mysql中
 count = 0
+
 for i in range(0, len(job_list)-4, 5):
     sql_select = "insert into job (position,company,salary,location,post_time) values ('%s','%s','%s','%s','%s')" \
-                     %(job_list[i],job_list[i+1],job_list[i+2],job_list[i+3],job_list[i+4])
+                     % (job_list[i],job_list[i+1],job_list[i+2],job_list[i+3],job_list[i+4])
     print(sql_select)
     try:
         count += 1
@@ -67,6 +72,9 @@ for i in range(0, len(job_list)-4, 5):
 curson.close()
 connection.close()
 
+end = datetime.now()
+print(end)
+print("程序耗时： " + str(end-start))
 
 
 
