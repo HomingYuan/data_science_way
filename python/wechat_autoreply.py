@@ -11,10 +11,14 @@
 from wxpy import *
 bot = Bot()
 # find friend
-my_friend = bot.friends().search('郑彪', sex=MALE)[0]
+my_friend = bot.friends().search('袁红明', sex=MALE)[0]
 
 # send message
-my_friend.send('再试一下')
+
+f = open('scraping.txt','r',encoding='utf-8')
+for line in f.readlines():
+    line = line.strip()
+    my_friend.send(line)
 
 
 # 打印来自其他好友、群聊和公众号的消息
