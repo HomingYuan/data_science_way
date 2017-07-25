@@ -9,11 +9,12 @@
 import urllib.request
 from bs4 import BeautifulSoup
 import urllib.parse
-import pymysql
+# import pymysql
 from datetime import datetime
 
 
 # 链接到mysql
+'''
 connection = pymysql.connect(host='127.0.0.1',
                              port=3306,
                              user='root',
@@ -23,7 +24,7 @@ connection = pymysql.connect(host='127.0.0.1',
                              cursorclass=pymysql.cursors.DictCursor)
 curson = connection.cursor()
 
-
+'''
 def get_content(kw, page):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0 ', 'host':'img01.zhaopin.cn'}  # 模拟浏览器
     url ="http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%e5%85%a8%e5%9b%bd&kw=" + urllib.parse.quote(kw) + "&sm=0&source=0&sg=c131af6ec2c74dfba41100e1c8925118&p="+str(page)+'.html'
