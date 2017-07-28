@@ -74,7 +74,7 @@ def main():
                 f.write(job_list[i])
                 f.write(',')
             if i % 5 == 4:
-                f.write(job_list[i])
+                f.write(job_list[i])d
                 f.write('\n')
 
     end = datetime.now()
